@@ -1,0 +1,154 @@
+//
+//  ViewController.swift
+//  MusicPlayer2
+//
+//  Created by Shapes on 13/11/2015.
+//  Copyright © 2015 Shapes. All rights reserved.
+//
+
+import UIKit
+import AVFoundation
+import MediaPlayer
+
+
+class PopulationOfArrays {
+    
+    func artistValues() -> [String] {
+        return ["Buddha Bar", "Chocolat", "100 Chill", "Chillout Classics", "Absolute Chillout", "Chill-One"]
+    }
+    
+    func trackValues(selected: String) -> [String] {
+        if selected == "Buddha Bar" {
+            return ["http://listen.radionomy.com/buddha-bar"]
+        }
+        if selected == "Chocolat" {
+            return ["http://listen.radionomy.com/chocolat-radio"]
+        }
+        if selected == "100 Chill" {
+            return ["http://listen.radionomy.com/100-chill"]
+        }
+        if selected == "Chillout Classics" {
+            return ["http://listen.radionomy.com/chillout-classics"]
+        }
+        if selected == "Absolute Chillout" {
+            return ["http://listen.radionomy.com/absolutechillout"]
+        }
+        else {
+            return["http://listen.radionomy.com/chill-one"]
+        }
+    }
+}
+
+class ViewController: UIViewController, UITextViewDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
+    
+    @IBOutlet weak var trackPicker: UIPickerView!
+    @IBOutlet weak var playButton: UIButton!
+    
+    var isPlaying = false
+    var error = "Error"
+    var radioDictionary = [String: String]()
+    var radioArray: [[String]] = [[String]]()
+    var picker1Options:[String] = []
+    
+    override func viewDidLoad() {
+        
+        super.viewDidLoad()
+        
+        
+        playButton.setTitle("Play", forState: UIControlState.Normal)
+        self.trackPicker.delegate = self
+        self.trackPicker.dataSource = self
+
+        picker1Options = ["Buddha Bar", "Chocolat", "100 Chill", "Chillout Classics", "Absolute Chillout", "Chill-One"]
+        let radioSortedKeys = Array(radioDictionary.keys).sort(<)
+        radioArray = [radioSortedKeys,radioSortedKeys]
+        
+        for (var row=0;row<radioArray[0].count;row++){
+            if (radioArray[0][row] == "Absolute Chillout"){
+                trackPicker.selectRow(row, inComponent: 0, animated: true)
+            }
+        }
+    }
+    
+    @IBAction func buttonPressed(sender: AnyObject) {
+        
+        toggle()
+    }
+    
+    func toggle() {
+        
+        if RadioPlayer.sharedInstance.currentlyPlaying() {
+            pauseRadio()
+        } else {
+            playRadio()
+        }
+    }
+    
+    func playRadio() {
+        
+        RadioPlayer.sharedInstance.play()
+        playButton.setTitle("Radio Playing - Press To Pause", forState: UIControlState.Normal)
+    }
+    
+    func pauseRadio() {
+        
+        RadioPlayer.sharedInstance.pause()
+        playButton.setTitle("Press To Play Radio", forState: UIControlState.Normal)
+    }
+    
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+        
+        return 1
+    }
+    
+    
+    // The number of rows of data
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+
+            return picker1Options.count
+    }
+    
+    
+    // The data to return for the row and component (column) that's being passed in
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+
+            return "\(picker1Options[row])"
+    }
+    
+    // Capture the picker view selection
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+
+            
+            if("\(picker1Options[row])" == "Buddha Bar")
+            {
+                RadioPlayer.sharedInstance.player = AVPlayer(URL: NSURL(string: "http://listen.radionomy.com/buddha-bar")!)
+            }
+            if("\(picker1Options[row])" == "Chocolat")
+            {
+                RadioPlayer.sharedInstance.player = AVPlayer(URL: NSURL(string: "http://listen.radionomy.com/chocolat-radio")!)
+            }
+            if("\(picker1Options[row])" == "Chillout Classics")
+            {
+                RadioPlayer.sharedInstance.player = AVPlayer(URL: NSURL(string: "http://listen.radionomy.com/chillout-classics")!)
+            }
+            if("\(picker1Options[row])" == "Absolute Chillout")
+            {
+                RadioPlayer.sharedInstance.player = AVPlayer(URL: NSURL(string: "http://listen.radionomy.com/absolutechillout")!)
+            }
+            if("\(picker1Options[row])" == "Chill-One")
+            {
+                RadioPlayer.sharedInstance.player = AVPlayer(URL: NSURL(string: "http://listen.radionomy.com/chill-one")!)
+            }
+            if("\(picker1Options[row])" == "100 Chill")
+            {
+                RadioPlayer.sharedInstance.player = AVPlayer(URL: NSURL(string: "http://listen.radionomy.com/100-chill")!)
+            }
+            
+            print( "\(RadioPlayer.sharedInstance.player)")
+            print("\(picker1Options[row])")
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+}

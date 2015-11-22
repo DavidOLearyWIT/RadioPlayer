@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="RadioPlayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <pickerView tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KNJ-9k-Vfv">
+                                <rect key="frame" x="18" y="361" width="564" height="126"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="126" id="jpF-fm-Cjh"/>
+                                </constraints>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GHF-3R-ViR">
+                                <rect key="frame" x="264" y="502" width="72" height="66"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="PZZ-1B-nxu"/>
+                                </constraints>
+                                <state key="normal" title="Play Radio">
+                                    <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="XH5-Im-jzA"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qKx-MN-Kek">
+                                <rect key="frame" x="20" y="28" width="562" height="301"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="GHF-3R-ViR" secondAttribute="bottom" constant="32" id="OqP-Sz-doj"/>
+                            <constraint firstItem="qKx-MN-Kek" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" symbolic="YES" id="RFA-oU-pKj"/>
+                            <constraint firstItem="GHF-3R-ViR" firstAttribute="top" secondItem="KNJ-9k-Vfv" secondAttribute="bottom" constant="15" id="Wng-se-4jO"/>
+                            <constraint firstItem="GHF-3R-ViR" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="cfp-ax-xDW"/>
+                            <constraint firstItem="KNJ-9k-Vfv" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-2" id="imp-5V-aq9"/>
+                            <constraint firstItem="qKx-MN-Kek" firstAttribute="trailing" secondItem="KNJ-9k-Vfv" secondAttribute="trailing" id="jaq-Rp-XgI"/>
+                            <constraint firstItem="qKx-MN-Kek" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="khH-b3-ipV"/>
+                            <constraint firstItem="KNJ-9k-Vfv" firstAttribute="centerX" secondItem="GHF-3R-ViR" secondAttribute="centerX" id="rqj-40-s6k"/>
+                            <constraint firstItem="KNJ-9k-Vfv" firstAttribute="top" secondItem="qKx-MN-Kek" secondAttribute="bottom" constant="32" id="zkU-72-Jej"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="playButton" destination="GHF-3R-ViR" id="S4C-YQ-Pc6"/>
+                        <outlet property="trackPicker" destination="KNJ-9k-Vfv" id="OdV-pq-5N4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="543" y="-314"/>
+        </scene>
+    </scenes>
+</document>
