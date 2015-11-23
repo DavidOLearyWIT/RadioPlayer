@@ -19,8 +19,8 @@
 		111FBEC21C028743008DF499 /* chillclassics.png in Resources */ = {isa = PBXBuildFile; fileRef = 111FBEBC1C028743008DF499 /* chillclassics.png */; };
 		111FBEC31C028743008DF499 /* 100Chill.png in Resources */ = {isa = PBXBuildFile; fileRef = 111FBEBD1C028743008DF499 /* 100Chill.png */; };
 		111FBEC41C028743008DF499 /* Chocolat.png in Resources */ = {isa = PBXBuildFile; fileRef = 111FBEBE1C028743008DF499 /* Chocolat.png */; };
-		111FBEC61C0289A2008DF499 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 111FBEC51C0289A2008DF499 /* LaunchScreen.xib */; };
 		111FBEC81C028A74008DF499 /* Radio.png in Resources */ = {isa = PBXBuildFile; fileRef = 111FBEC71C028A74008DF499 /* Radio.png */; };
+		111FBECA1C028EC4008DF499 /* frequency.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 111FBEC91C028EC4008DF499 /* frequency.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,8 +38,8 @@
 		111FBEBC1C028743008DF499 /* chillclassics.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chillclassics.png; sourceTree = "<group>"; };
 		111FBEBD1C028743008DF499 /* 100Chill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 100Chill.png; sourceTree = "<group>"; };
 		111FBEBE1C028743008DF499 /* Chocolat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chocolat.png; sourceTree = "<group>"; };
-		111FBEC51C0289A2008DF499 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		111FBEC71C028A74008DF499 /* Radio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Radio.png; sourceTree = "<group>"; };
+		111FBEC91C028EC4008DF499 /* frequency.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = frequency.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,10 +79,10 @@
 				111FBEC71C028A74008DF499 /* Radio.png */,
 				111FBEBD1C028743008DF499 /* 100Chill.png */,
 				111FBEBE1C028743008DF499 /* Chocolat.png */,
+				111FBEC91C028EC4008DF499 /* frequency.jpg */,
 				111FBEB11C0255F6008DF499 /* RadioPlayer.swift */,
 				111FBEB21C0255F6008DF499 /* ViewController.swift */,
 				111FBE9D1C02548B008DF499 /* AppDelegate.swift */,
-				111FBEC51C0289A2008DF499 /* LaunchScreen.xib */,
 				111FBEB51C02571A008DF499 /* Main.storyboard */,
 				111FBEA41C02548B008DF499 /* Assets.xcassets */,
 				111FBEA61C02548B008DF499 /* LaunchScreen.storyboard */,
@@ -150,10 +150,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				111FBEC61C0289A2008DF499 /* LaunchScreen.xib in Resources */,
 				111FBEC81C028A74008DF499 /* Radio.png in Resources */,
 				111FBEB61C02571A008DF499 /* Main.storyboard in Resources */,
 				111FBEA81C02548B008DF499 /* LaunchScreen.storyboard in Resources */,
+				111FBECA1C028EC4008DF499 /* frequency.jpg in Resources */,
 				111FBEC11C028743008DF499 /* absolutechillout.png in Resources */,
 				111FBEA51C02548B008DF499 /* Assets.xcassets in Resources */,
 				111FBEC01C028743008DF499 /* chillone.png in Resources */,
