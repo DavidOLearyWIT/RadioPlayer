@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -21,50 +20,39 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rkB-DI-BF4">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Copyright (c) 2015 David O'Leary. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="lc2-wd-oEw">
-                                        <rect key="frame" x="80" y="558" width="441" height="21"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DaftPunk.png" translatesAutoresizingMaskIntoConstraints="NO" id="rCY-st-rHV">
+                                        <rect key="frame" x="16" y="16" width="569" height="569"/>
                                         <animations/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="frequency.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="q4W-Xu-MuS">
-                                        <rect key="frame" x="8" y="248" width="584" height="128"/>
-                                        <animations/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="128" id="4Lb-ZJ-G9x"/>
-                                        </constraints>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     </imageView>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Radio Player" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="bWm-en-1ZB">
-                                        <rect key="frame" x="80" y="108" width="441" height="43"/>
-                                        <animations/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </label>
                                 </subviews>
                                 <animations/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="q4W-Xu-MuS" firstAttribute="leading" secondItem="rkB-DI-BF4" secondAttribute="leadingMargin" id="8Xp-cp-gqn"/>
-                                    <constraint firstItem="bWm-en-1ZB" firstAttribute="top" secondItem="rkB-DI-BF4" secondAttribute="top" constant="108" id="DdX-Ko-o28"/>
-                                    <constraint firstItem="lc2-wd-oEw" firstAttribute="leading" secondItem="bWm-en-1ZB" secondAttribute="leading" id="Idr-c9-11u"/>
-                                    <constraint firstItem="q4W-Xu-MuS" firstAttribute="top" secondItem="bWm-en-1ZB" secondAttribute="bottom" constant="97" id="KYl-vm-Xr5"/>
-                                    <constraint firstItem="q4W-Xu-MuS" firstAttribute="centerX" secondItem="bWm-en-1ZB" secondAttribute="centerX" id="NoA-a3-xX4"/>
-                                    <constraint firstItem="bWm-en-1ZB" firstAttribute="leading" secondItem="rkB-DI-BF4" secondAttribute="leading" constant="80" id="QZJ-tJ-glj"/>
-                                    <constraint firstAttribute="bottom" secondItem="lc2-wd-oEw" secondAttribute="bottom" constant="21" id="egf-St-m6V"/>
-                                    <constraint firstItem="lc2-wd-oEw" firstAttribute="trailing" secondItem="bWm-en-1ZB" secondAttribute="trailing" id="fQN-ZE-NJx"/>
-                                    <constraint firstItem="q4W-Xu-MuS" firstAttribute="trailing" secondItem="rkB-DI-BF4" secondAttribute="trailingMargin" id="hbb-Nf-8as"/>
+                                    <constraint firstItem="rCY-st-rHV" firstAttribute="top" secondItem="rkB-DI-BF4" secondAttribute="top" constant="16" id="HKT-6e-oPG"/>
+                                    <constraint firstItem="rCY-st-rHV" firstAttribute="leading" secondItem="rkB-DI-BF4" secondAttribute="leading" constant="16" id="K5P-Sr-GN9"/>
+                                    <constraint firstItem="rCY-st-rHV" firstAttribute="centerY" secondItem="rkB-DI-BF4" secondAttribute="centerY" id="MTv-pc-WBI"/>
+                                    <constraint firstItem="rCY-st-rHV" firstAttribute="centerX" secondItem="rkB-DI-BF4" secondAttribute="centerX" id="SsM-fH-965"/>
                                 </constraints>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chillradio.png" translatesAutoresizingMaskIntoConstraints="NO" id="jzD-X6-iY9">
+                                <rect key="frame" x="227" y="287" width="145" height="80"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="145" id="87p-rN-Kdm"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="rkB-DI-BF4" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="HAs-ev-FsF"/>
-                            <constraint firstItem="rkB-DI-BF4" firstAttribute="bottom" secondItem="xb3-aO-Qok" secondAttribute="top" id="Oz0-RI-EFf"/>
-                            <constraint firstAttribute="trailing" secondItem="rkB-DI-BF4" secondAttribute="trailing" id="Ql2-6l-74X"/>
-                            <constraint firstItem="rkB-DI-BF4" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="hHV-BE-s2U"/>
+                            <constraint firstItem="jzD-X6-iY9" firstAttribute="centerX" secondItem="rkB-DI-BF4" secondAttribute="centerX" id="ETN-Xr-WVd"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="jzD-X6-iY9" secondAttribute="bottom" constant="233" id="Hsr-s2-Hbw"/>
+                            <constraint firstItem="rkB-DI-BF4" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="J6h-Ie-Nmf"/>
+                            <constraint firstItem="jzD-X6-iY9" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="267" id="Ml4-yH-hZG"/>
+                            <constraint firstItem="rkB-DI-BF4" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="aW6-bg-Vec"/>
+                            <constraint firstItem="rkB-DI-BF4" firstAttribute="bottom" secondItem="xb3-aO-Qok" secondAttribute="top" id="dKm-co-lhn"/>
+                            <constraint firstAttribute="trailing" secondItem="rkB-DI-BF4" secondAttribute="trailing" id="fEj-3A-GoT"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -74,6 +62,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="frequency.jpg" width="1920" height="1080"/>
+        <image name="DaftPunk.png" width="512" height="512"/>
+        <image name="chillradio.png" width="613" height="90"/>
     </resources>
 </document>

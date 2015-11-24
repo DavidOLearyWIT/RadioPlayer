@@ -13,14 +13,18 @@
 		111FBEB31C0255F6008DF499 /* RadioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111FBEB11C0255F6008DF499 /* RadioPlayer.swift */; };
 		111FBEB41C0255F6008DF499 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111FBEB21C0255F6008DF499 /* ViewController.swift */; };
 		111FBEB61C02571A008DF499 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 111FBEB51C02571A008DF499 /* Main.storyboard */; };
-		111FBEBF1C028743008DF499 /* buddhabar.png in Resources */ = {isa = PBXBuildFile; fileRef = 111FBEB91C028743008DF499 /* buddhabar.png */; };
-		111FBEC01C028743008DF499 /* chillone.png in Resources */ = {isa = PBXBuildFile; fileRef = 111FBEBA1C028743008DF499 /* chillone.png */; };
-		111FBEC11C028743008DF499 /* absolutechillout.png in Resources */ = {isa = PBXBuildFile; fileRef = 111FBEBB1C028743008DF499 /* absolutechillout.png */; };
-		111FBEC21C028743008DF499 /* chillclassics.png in Resources */ = {isa = PBXBuildFile; fileRef = 111FBEBC1C028743008DF499 /* chillclassics.png */; };
-		111FBEC31C028743008DF499 /* 100Chill.png in Resources */ = {isa = PBXBuildFile; fileRef = 111FBEBD1C028743008DF499 /* 100Chill.png */; };
-		111FBEC41C028743008DF499 /* Chocolat.png in Resources */ = {isa = PBXBuildFile; fileRef = 111FBEBE1C028743008DF499 /* Chocolat.png */; };
 		111FBEC81C028A74008DF499 /* Radio.png in Resources */ = {isa = PBXBuildFile; fileRef = 111FBEC71C028A74008DF499 /* Radio.png */; };
 		111FBECA1C028EC4008DF499 /* frequency.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 111FBEC91C028EC4008DF499 /* frequency.jpg */; };
+		11BC0A401C0344E90099B907 /* DaftPunk.png in Resources */ = {isa = PBXBuildFile; fileRef = 11BC0A3F1C0344E90099B907 /* DaftPunk.png */; };
+		11BC0A421C03544A0099B907 /* Spectrum.gif in Resources */ = {isa = PBXBuildFile; fileRef = 11BC0A411C03544A0099B907 /* Spectrum.gif */; };
+		11F1F0371C0504B7006636B2 /* chocolat.png in Resources */ = {isa = PBXBuildFile; fileRef = 11F1F0311C0504B7006636B2 /* chocolat.png */; };
+		11F1F0381C0504B7006636B2 /* chillone.png in Resources */ = {isa = PBXBuildFile; fileRef = 11F1F0321C0504B7006636B2 /* chillone.png */; };
+		11F1F03B1C0504B7006636B2 /* 100Chill.png in Resources */ = {isa = PBXBuildFile; fileRef = 11F1F0351C0504B7006636B2 /* 100Chill.png */; };
+		11F1F03C1C0504B7006636B2 /* buddhabar.png in Resources */ = {isa = PBXBuildFile; fileRef = 11F1F0361C0504B7006636B2 /* buddhabar.png */; };
+		11F1F0411C050E4C006636B2 /* chillradio.png in Resources */ = {isa = PBXBuildFile; fileRef = 11F1F03D1C050E4C006636B2 /* chillradio.png */; };
+		11F1F0421C050E4C006636B2 /* vibe.png in Resources */ = {isa = PBXBuildFile; fileRef = 11F1F03E1C050E4C006636B2 /* vibe.png */; };
+		11F1F0431C050E4C006636B2 /* absolute.png in Resources */ = {isa = PBXBuildFile; fileRef = 11F1F03F1C050E4C006636B2 /* absolute.png */; };
+		11F1F0441C050E4C006636B2 /* classics.png in Resources */ = {isa = PBXBuildFile; fileRef = 11F1F0401C050E4C006636B2 /* classics.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,14 +36,18 @@
 		111FBEB11C0255F6008DF499 /* RadioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioPlayer.swift; sourceTree = SOURCE_ROOT; };
 		111FBEB21C0255F6008DF499 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
 		111FBEB51C02571A008DF499 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		111FBEB91C028743008DF499 /* buddhabar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buddhabar.png; sourceTree = "<group>"; };
-		111FBEBA1C028743008DF499 /* chillone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chillone.png; sourceTree = "<group>"; };
-		111FBEBB1C028743008DF499 /* absolutechillout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = absolutechillout.png; sourceTree = "<group>"; };
-		111FBEBC1C028743008DF499 /* chillclassics.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chillclassics.png; sourceTree = "<group>"; };
-		111FBEBD1C028743008DF499 /* 100Chill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 100Chill.png; sourceTree = "<group>"; };
-		111FBEBE1C028743008DF499 /* Chocolat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chocolat.png; sourceTree = "<group>"; };
 		111FBEC71C028A74008DF499 /* Radio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Radio.png; sourceTree = "<group>"; };
 		111FBEC91C028EC4008DF499 /* frequency.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = frequency.jpg; sourceTree = "<group>"; };
+		11BC0A3F1C0344E90099B907 /* DaftPunk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DaftPunk.png; sourceTree = "<group>"; };
+		11BC0A411C03544A0099B907 /* Spectrum.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Spectrum.gif; sourceTree = "<group>"; };
+		11F1F0311C0504B7006636B2 /* chocolat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chocolat.png; sourceTree = "<group>"; };
+		11F1F0321C0504B7006636B2 /* chillone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chillone.png; sourceTree = "<group>"; };
+		11F1F0351C0504B7006636B2 /* 100Chill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 100Chill.png; sourceTree = "<group>"; };
+		11F1F0361C0504B7006636B2 /* buddhabar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buddhabar.png; sourceTree = "<group>"; };
+		11F1F03D1C050E4C006636B2 /* chillradio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chillradio.png; sourceTree = "<group>"; };
+		11F1F03E1C050E4C006636B2 /* vibe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vibe.png; sourceTree = "<group>"; };
+		11F1F03F1C050E4C006636B2 /* absolute.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = absolute.png; sourceTree = "<group>"; };
+		11F1F0401C050E4C006636B2 /* classics.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = classics.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,13 +80,17 @@
 		111FBE9C1C02548B008DF499 /* RadioPlayer */ = {
 			isa = PBXGroup;
 			children = (
-				111FBEB91C028743008DF499 /* buddhabar.png */,
-				111FBEBA1C028743008DF499 /* chillone.png */,
-				111FBEBB1C028743008DF499 /* absolutechillout.png */,
-				111FBEBC1C028743008DF499 /* chillclassics.png */,
+				11F1F0311C0504B7006636B2 /* chocolat.png */,
+				11F1F0321C0504B7006636B2 /* chillone.png */,
+				11F1F0351C0504B7006636B2 /* 100Chill.png */,
+				11F1F03D1C050E4C006636B2 /* chillradio.png */,
+				11F1F03E1C050E4C006636B2 /* vibe.png */,
+				11F1F03F1C050E4C006636B2 /* absolute.png */,
+				11F1F0401C050E4C006636B2 /* classics.png */,
+				11F1F0361C0504B7006636B2 /* buddhabar.png */,
+				11BC0A411C03544A0099B907 /* Spectrum.gif */,
 				111FBEC71C028A74008DF499 /* Radio.png */,
-				111FBEBD1C028743008DF499 /* 100Chill.png */,
-				111FBEBE1C028743008DF499 /* Chocolat.png */,
+				11BC0A3F1C0344E90099B907 /* DaftPunk.png */,
 				111FBEC91C028EC4008DF499 /* frequency.jpg */,
 				111FBEB11C0255F6008DF499 /* RadioPlayer.swift */,
 				111FBEB21C0255F6008DF499 /* ViewController.swift */,
@@ -150,17 +162,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11F1F0441C050E4C006636B2 /* classics.png in Resources */,
 				111FBEC81C028A74008DF499 /* Radio.png in Resources */,
 				111FBEB61C02571A008DF499 /* Main.storyboard in Resources */,
 				111FBEA81C02548B008DF499 /* LaunchScreen.storyboard in Resources */,
+				11F1F0381C0504B7006636B2 /* chillone.png in Resources */,
+				11F1F03C1C0504B7006636B2 /* buddhabar.png in Resources */,
+				11F1F03B1C0504B7006636B2 /* 100Chill.png in Resources */,
+				11F1F0411C050E4C006636B2 /* chillradio.png in Resources */,
 				111FBECA1C028EC4008DF499 /* frequency.jpg in Resources */,
-				111FBEC11C028743008DF499 /* absolutechillout.png in Resources */,
+				11F1F0371C0504B7006636B2 /* chocolat.png in Resources */,
+				11BC0A401C0344E90099B907 /* DaftPunk.png in Resources */,
+				11F1F0421C050E4C006636B2 /* vibe.png in Resources */,
 				111FBEA51C02548B008DF499 /* Assets.xcassets in Resources */,
-				111FBEC01C028743008DF499 /* chillone.png in Resources */,
-				111FBEC21C028743008DF499 /* chillclassics.png in Resources */,
-				111FBEBF1C028743008DF499 /* buddhabar.png in Resources */,
-				111FBEC31C028743008DF499 /* 100Chill.png in Resources */,
-				111FBEC41C028743008DF499 /* Chocolat.png in Resources */,
+				11F1F0431C050E4C006636B2 /* absolute.png in Resources */,
+				11BC0A421C03544A0099B907 /* Spectrum.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

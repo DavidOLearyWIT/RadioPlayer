@@ -38,6 +38,8 @@
 			<string></string>
 			<key>http://listen.radionomy.com/chocolat-radio</key>
 			<string></string>
+			<key>http://myradiostream.com/witvibe</key>
+			<string></string>
 		</dict>
 	</dict>
 	<key>UILaunchStoryboardName</key>
