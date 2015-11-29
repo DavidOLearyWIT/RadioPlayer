@@ -20,8 +20,6 @@ class ViewController: UIViewController, UITextViewDelegate, UIPickerViewDelegate
     
     var isPlaying = false
     var error = "Error"
-    var radioDictionary = [String: String]()
-    var radioArray: [[String]] = [[String]]()
     var picker1Options = [String]()
     
     override func viewDidLoad() {
