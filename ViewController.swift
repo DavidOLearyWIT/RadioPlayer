@@ -10,37 +10,6 @@ import UIKit
 import AVFoundation
 import MediaPlayer
 
-/*
-class PopulationOfArrays {
-    
-    func artistValues() -> [String] {
-        return ["Vibe", "Buddha Bar", "Chocolat", "100 Chill", "Chillout Classics", "Absolute Chillout", "Chill-One"]
-    }
-    
-    func trackValues(selected: String) -> [String] {
-        if selected == "Buddha Bar" {
-            return ["http://listen.radionomy.com/buddha-bar"]
-        }
-        if selected == "Chocolat" {
-            return ["http://listen.radionomy.com/chocolat-radio"]
-        }
-        if selected == "100 Chill" {
-            return ["http://listen.radionomy.com/100-chill"]
-        }
-        if selected == "Chillout Classics" {
-            return ["http://listen.radionomy.com/chillout-classics"]
-        }
-        if selected == "Absolute Chillout" {
-            return ["http://listen.radionomy.com/absolutechillout"]
-        }
-        if selected == "Vibe" {
-            return ["http://s22.myradiostream.com:9368/"]
-        }
-        else {
-            return["http://listen.radionomy.com/chill-one"]
-        }
-    }
-}*/
 
 class ViewController: UIViewController, UITextViewDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
     
@@ -68,14 +37,6 @@ class ViewController: UIViewController, UITextViewDelegate, UIPickerViewDelegate
         self.trackPicker.delegate = self
         self.trackPicker.dataSource = self
 
-        /*let radioSortedKeys = Array(radioDictionary.keys).sort(<)
-        radioArray = [radioSortedKeys,radioSortedKeys]
-        
-        for (var row=0;row<radioArray[0].count;row++){
-            if (radioArray[0][row] == "Absolute Chillout"){
-                trackPicker.selectRow(row, inComponent: 0, animated: true)
-            }
-        }*/
     }
     
     @IBAction func buttonPressed(sender: AnyObject) {
