@@ -26,6 +26,12 @@ class ViewController: UIViewController, UITextViewDelegate, UIPickerViewDelegate
         
         super.viewDidLoad()
         
+        do{
+        try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+        }catch{
+            print(error)
+        }
+        
         let path = NSBundle.mainBundle().pathForResource("stations", ofType: "plist")
         let dict = NSDictionary(contentsOfFile: path!)
         
@@ -53,14 +59,18 @@ class ViewController: UIViewController, UITextViewDelegate, UIPickerViewDelegate
     
     func playRadio() {
         
+        CozyLoadingActivity.show("Buffering...", sender: self, disableUI: true)
         RadioPlayer.sharedInstance.play()
         playButton.setImage(UIImage(named: "pause.png") , forState: UIControlState.Normal)
+        CozyLoadingActivity.hide(success: true, animated: false)
     }
     
     func pauseRadio() {
         
         RadioPlayer.sharedInstance.pause()
         playButton.setImage(UIImage(named: "play.png") , forState: UIControlState.Normal)
+        CozyLoadingActivity.show("Paused...", sender: self, disableUI: false)
+
     }
     
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
