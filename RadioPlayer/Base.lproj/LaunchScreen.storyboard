@@ -19,21 +19,8 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rkB-DI-BF4">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DaftPunk.png" translatesAutoresizingMaskIntoConstraints="NO" id="rCY-st-rHV">
-                                        <rect key="frame" x="16" y="16" width="569" height="569"/>
-                                        <animations/>
-                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    </imageView>
-                                </subviews>
                                 <animations/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstItem="rCY-st-rHV" firstAttribute="top" secondItem="rkB-DI-BF4" secondAttribute="top" constant="16" id="HKT-6e-oPG"/>
-                                    <constraint firstItem="rCY-st-rHV" firstAttribute="leading" secondItem="rkB-DI-BF4" secondAttribute="leading" constant="16" id="K5P-Sr-GN9"/>
-                                    <constraint firstItem="rCY-st-rHV" firstAttribute="centerY" secondItem="rkB-DI-BF4" secondAttribute="centerY" id="MTv-pc-WBI"/>
-                                    <constraint firstItem="rCY-st-rHV" firstAttribute="centerX" secondItem="rkB-DI-BF4" secondAttribute="centerX" id="SsM-fH-965"/>
-                                </constraints>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chillradio.png" translatesAutoresizingMaskIntoConstraints="NO" id="jzD-X6-iY9">
                                 <rect key="frame" x="227" y="287" width="145" height="80"/>
@@ -62,7 +49,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="DaftPunk.png" width="512" height="512"/>
         <image name="chillradio.png" width="613" height="90"/>
     </resources>
 </document>

@@ -10,7 +10,7 @@ import UIKit
 import AVFoundation
 import MediaPlayer
 
-
+/*
 class PopulationOfArrays {
     
     func artistValues() -> [String] {
@@ -40,7 +40,7 @@ class PopulationOfArrays {
             return["http://listen.radionomy.com/chill-one"]
         }
     }
-}
+}*/
 
 class ViewController: UIViewController, UITextViewDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
     
@@ -54,26 +54,30 @@ class ViewController: UIViewController, UITextViewDelegate, UIPickerViewDelegate
     var error = "Error"
     var radioDictionary = [String: String]()
     var radioArray: [[String]] = [[String]]()
-    var picker1Options:[String] = []
+    var picker1Options = [String]()
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
+        let path = NSBundle.mainBundle().pathForResource("stations", ofType: "plist")
+        let dict = NSDictionary(contentsOfFile: path!)
+        
+        picker1Options = dict!.objectForKey("stations") as! [String]
         
         bgImage!.image = UIImage(named: "vibe.png")!
         playButton.setTitle("Play Radio", forState: UIControlState.Normal)
         self.trackPicker.delegate = self
         self.trackPicker.dataSource = self
 
-        picker1Options = ["Vibe", "Buddha Bar", "Chocolat", "100 Chill", "Chillout Classics", "Absolute Chillout", "Chill-One"]
-        let radioSortedKeys = Array(radioDictionary.keys).sort(<)
+        /*let radioSortedKeys = Array(radioDictionary.keys).sort(<)
         radioArray = [radioSortedKeys,radioSortedKeys]
         
         for (var row=0;row<radioArray[0].count;row++){
             if (radioArray[0][row] == "Absolute Chillout"){
                 trackPicker.selectRow(row, inComponent: 0, animated: true)
             }
-        }
+        }*/
     }
     
     @IBAction func buttonPressed(sender: AnyObject) {
@@ -122,7 +126,7 @@ class ViewController: UIViewController, UITextViewDelegate, UIPickerViewDelegate
     }
     
     func pickerView(pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
-        let attributedString = NSAttributedString(string: "\(picker1Options[row])", attributes: [NSForegroundColorAttributeName : UIColor.whiteColor()])
+        let attributedString = NSAttributedString(string: "\(picker1Options[row])", attributes: [NSForegroundColorAttributeName : UIColor.blackColor()])
         return attributedString
     }
     

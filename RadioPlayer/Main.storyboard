@@ -19,10 +19,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DaftPunk.png" translatesAutoresizingMaskIntoConstraints="NO" id="CDs-9r-KMG">
-                                <rect key="frame" x="20" y="15" width="560" height="571"/>
-                                <animations/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qKx-MN-Kek">
                                 <rect key="frame" x="228" y="289" width="145" height="41"/>
                                 <animations/>
@@ -44,7 +40,7 @@
                                     <constraint firstAttribute="height" constant="66" id="YlS-NP-zl5"/>
                                 </constraints>
                                 <state key="normal" title="Play Radio">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -53,20 +49,16 @@
                             </button>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="CDs-9r-KMG" secondAttribute="bottom" constant="14" id="5oQ-Sq-Spa"/>
-                            <constraint firstItem="CDs-9r-KMG" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="7Y2-ge-b4C"/>
                             <constraint firstItem="qKx-MN-Kek" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="height" multiplier="29:120" id="99S-8v-WYt"/>
                             <constraint firstItem="GHF-3R-ViR" firstAttribute="top" secondItem="KNJ-9k-Vfv" secondAttribute="bottom" constant="15" id="9J9-f3-pEO"/>
                             <constraint firstItem="GHF-3R-ViR" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="AsR-Ke-k83"/>
                             <constraint firstItem="KNJ-9k-Vfv" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-2" id="CTx-Zd-jtA"/>
-                            <constraint firstItem="CDs-9r-KMG" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="OCS-7R-COV"/>
                             <constraint firstItem="KNJ-9k-Vfv" firstAttribute="top" secondItem="qKx-MN-Kek" secondAttribute="bottom" constant="31" id="RuB-44-EP4"/>
                             <constraint firstItem="GHF-3R-ViR" firstAttribute="centerX" secondItem="KNJ-9k-Vfv" secondAttribute="centerX" id="V1l-Rr-wTb"/>
                             <constraint firstItem="KNJ-9k-Vfv" firstAttribute="centerX" secondItem="qKx-MN-Kek" secondAttribute="centerX" id="iAw-HO-uoc"/>
                             <constraint firstItem="qKx-MN-Kek" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="269" id="iT6-LA-zrC"/>
-                            <constraint firstItem="CDs-9r-KMG" firstAttribute="centerX" secondItem="KNJ-9k-Vfv" secondAttribute="centerX" id="kST-Y5-2u1"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="GHF-3R-ViR" secondAttribute="bottom" constant="32" id="w4h-tz-58Z"/>
                         </constraints>
                     </view>
@@ -81,7 +73,4 @@
             <point key="canvasLocation" x="543" y="-314"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="DaftPunk.png" width="512" height="512"/>
-    </resources>
 </document>
