@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -20,26 +19,21 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qKx-MN-Kek">
-                                <rect key="frame" x="228" y="289" width="145" height="41"/>
+                                <rect key="frame" x="228" y="116" width="145" height="41"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="145" id="2Vx-af-H4i"/>
-                                    <constraint firstAttribute="height" constant="41" id="BNf-E7-bpg"/>
+                                    <constraint firstAttribute="width" constant="145" id="EgW-z8-eIA"/>
+                                    <constraint firstAttribute="height" constant="41" id="lfn-xB-xAG"/>
                                 </constraints>
                             </imageView>
-                            <pickerView tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KNJ-9k-Vfv">
-                                <rect key="frame" x="18" y="361" width="564" height="126"/>
-                                <animations/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </pickerView>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GHF-3R-ViR">
-                                <rect key="frame" x="264" y="502" width="72" height="66"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GHF-3R-ViR">
+                                <rect key="frame" x="194" y="428" width="213" height="152"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="66" id="YlS-NP-zl5"/>
+                                    <constraint firstAttribute="height" constant="152" id="1kG-6K-df4"/>
+                                    <constraint firstAttribute="width" constant="213" id="PQa-09-kox"/>
                                 </constraints>
-                                <state key="normal" title="Play Radio">
+                                <state key="normal" image="play.png">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -47,19 +41,26 @@
                                     <action selector="buttonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="XH5-Im-jzA"/>
                                 </connections>
                             </button>
+                            <pickerView tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KNJ-9k-Vfv">
+                                <rect key="frame" x="18" y="294" width="564" height="126"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="126" id="5yN-yL-UP9"/>
+                                </constraints>
+                            </pickerView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="qKx-MN-Kek" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="height" multiplier="29:120" id="99S-8v-WYt"/>
-                            <constraint firstItem="GHF-3R-ViR" firstAttribute="top" secondItem="KNJ-9k-Vfv" secondAttribute="bottom" constant="15" id="9J9-f3-pEO"/>
-                            <constraint firstItem="GHF-3R-ViR" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="AsR-Ke-k83"/>
-                            <constraint firstItem="KNJ-9k-Vfv" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-2" id="CTx-Zd-jtA"/>
-                            <constraint firstItem="KNJ-9k-Vfv" firstAttribute="top" secondItem="qKx-MN-Kek" secondAttribute="bottom" constant="31" id="RuB-44-EP4"/>
-                            <constraint firstItem="GHF-3R-ViR" firstAttribute="centerX" secondItem="KNJ-9k-Vfv" secondAttribute="centerX" id="V1l-Rr-wTb"/>
-                            <constraint firstItem="KNJ-9k-Vfv" firstAttribute="centerX" secondItem="qKx-MN-Kek" secondAttribute="centerX" id="iAw-HO-uoc"/>
-                            <constraint firstItem="qKx-MN-Kek" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="269" id="iT6-LA-zrC"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="GHF-3R-ViR" secondAttribute="bottom" constant="32" id="w4h-tz-58Z"/>
+                            <constraint firstItem="qKx-MN-Kek" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="96" id="7wq-RW-MsF"/>
+                            <constraint firstAttribute="bottom" secondItem="GHF-3R-ViR" secondAttribute="bottom" constant="20" symbolic="YES" id="9l8-wW-X1s"/>
+                            <constraint firstItem="KNJ-9k-Vfv" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-2" id="Kbb-Eb-EfZ"/>
+                            <constraint firstItem="GHF-3R-ViR" firstAttribute="centerX" secondItem="KNJ-9k-Vfv" secondAttribute="centerX" id="cgq-xm-deV"/>
+                            <constraint firstItem="GHF-3R-ViR" firstAttribute="top" secondItem="KNJ-9k-Vfv" secondAttribute="bottom" constant="8" symbolic="YES" id="rvJ-sM-Iba"/>
+                            <constraint firstItem="GHF-3R-ViR" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="u0r-wd-EH6"/>
+                            <constraint firstItem="qKx-MN-Kek" firstAttribute="centerX" secondItem="KNJ-9k-Vfv" secondAttribute="centerX" id="zLz-Rw-27e"/>
                         </constraints>
                     </view>
                     <connections>
@@ -73,4 +74,7 @@
             <point key="canvasLocation" x="543" y="-314"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="play.png" width="299" height="285"/>
+    </resources>
 </document>

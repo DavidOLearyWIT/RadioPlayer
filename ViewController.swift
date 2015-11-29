@@ -47,7 +47,6 @@ class ViewController: UIViewController, UITextViewDelegate, UIPickerViewDelegate
     @IBOutlet weak var trackPicker: UIPickerView!
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var bgImage: UIImageView!
-    @IBOutlet weak var mainWebView: UIWebView!
 
     
     var isPlaying = false
@@ -66,7 +65,6 @@ class ViewController: UIViewController, UITextViewDelegate, UIPickerViewDelegate
         picker1Options = dict!.objectForKey("stations") as! [String]
         
         bgImage!.image = UIImage(named: "vibe.png")!
-        playButton.setTitle("Play Radio", forState: UIControlState.Normal)
         self.trackPicker.delegate = self
         self.trackPicker.dataSource = self
 
@@ -97,13 +95,13 @@ class ViewController: UIViewController, UITextViewDelegate, UIPickerViewDelegate
     func playRadio() {
         
         RadioPlayer.sharedInstance.play()
-        playButton.setTitle("Radio Playing - Press To Pause", forState: UIControlState.Normal)
+        playButton.setImage(UIImage(named: "pause.png") , forState: UIControlState.Normal)
     }
     
     func pauseRadio() {
         
         RadioPlayer.sharedInstance.pause()
-        playButton.setTitle("Press To Play Radio", forState: UIControlState.Normal)
+        playButton.setImage(UIImage(named: "play.png") , forState: UIControlState.Normal)
     }
     
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {

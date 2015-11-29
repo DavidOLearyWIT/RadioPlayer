@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		11072C881C0BAA0100B2111F /* stations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 11072C871C0BAA0100B2111F /* stations.plist */; };
+		11072C8B1C0BAE5600B2111F /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 11072C891C0BAE5600B2111F /* pause.png */; };
+		11072C8C1C0BAE5600B2111F /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 11072C8A1C0BAE5600B2111F /* play.png */; };
 		111FBE9E1C02548B008DF499 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111FBE9D1C02548B008DF499 /* AppDelegate.swift */; };
 		111FBEA51C02548B008DF499 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 111FBEA41C02548B008DF499 /* Assets.xcassets */; };
 		111FBEA81C02548B008DF499 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 111FBEA61C02548B008DF499 /* LaunchScreen.storyboard */; };
@@ -30,6 +32,8 @@
 
 /* Begin PBXFileReference section */
 		11072C871C0BAA0100B2111F /* stations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = stations.plist; sourceTree = "<group>"; };
+		11072C891C0BAE5600B2111F /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
+		11072C8A1C0BAE5600B2111F /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
 		111FBE9A1C02548B008DF499 /* RadioPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RadioPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		111FBE9D1C02548B008DF499 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		111FBEA41C02548B008DF499 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -90,6 +94,8 @@
 				11F1F03F1C050E4C006636B2 /* absolute.png */,
 				11F1F0401C050E4C006636B2 /* classics.png */,
 				11F1F0361C0504B7006636B2 /* buddhabar.png */,
+				11072C891C0BAE5600B2111F /* pause.png */,
+				11072C8A1C0BAE5600B2111F /* play.png */,
 				11BC0A411C03544A0099B907 /* Spectrum.gif */,
 				111FBEC71C028A74008DF499 /* Radio.png */,
 				11BC0A3F1C0344E90099B907 /* DaftPunk.png */,
@@ -176,9 +182,11 @@
 				111FBECA1C028EC4008DF499 /* frequency.jpg in Resources */,
 				11F1F0371C0504B7006636B2 /* chocolat.png in Resources */,
 				11BC0A401C0344E90099B907 /* DaftPunk.png in Resources */,
+				11072C8C1C0BAE5600B2111F /* play.png in Resources */,
 				11F1F0421C050E4C006636B2 /* vibe.png in Resources */,
 				111FBEA51C02548B008DF499 /* Assets.xcassets in Resources */,
 				11072C881C0BAA0100B2111F /* stations.plist in Resources */,
+				11072C8B1C0BAE5600B2111F /* pause.png in Resources */,
 				11F1F0431C050E4C006636B2 /* absolute.png in Resources */,
 				11BC0A421C03544A0099B907 /* Spectrum.gif in Resources */,
 			);
