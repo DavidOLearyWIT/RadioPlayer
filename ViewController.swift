@@ -26,6 +26,8 @@ class ViewController: UIViewController, UITextViewDelegate, UIPickerViewDelegate
         
         super.viewDidLoad()
         
+        CozyLoadingActivity.show("Press play to stream...", sender: self, disableUI: false)
+        
         do{
         try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
         }catch{
@@ -59,7 +61,6 @@ class ViewController: UIViewController, UITextViewDelegate, UIPickerViewDelegate
     
     func playRadio() {
         
-        CozyLoadingActivity.show("Buffering...", sender: self, disableUI: true)
         RadioPlayer.sharedInstance.play()
         playButton.setImage(UIImage(named: "pause.png") , forState: UIControlState.Normal)
         CozyLoadingActivity.hide(success: true, animated: false)
@@ -69,7 +70,7 @@ class ViewController: UIViewController, UITextViewDelegate, UIPickerViewDelegate
         
         RadioPlayer.sharedInstance.pause()
         playButton.setImage(UIImage(named: "play.png") , forState: UIControlState.Normal)
-        CozyLoadingActivity.show("Paused...", sender: self, disableUI: false)
+        CozyLoadingActivity.show("Press play to resume...", sender: self, disableUI: false)
 
     }
     
@@ -136,9 +137,7 @@ class ViewController: UIViewController, UITextViewDelegate, UIPickerViewDelegate
                 RadioPlayer.sharedInstance.player = AVPlayer(URL: NSURL(string: "http://s22.myradiostream.com:9368/")!)
                 bgImage!.image = UIImage(named: "vibe.png")!
             }
-        
-            print( "\(RadioPlayer.sharedInstance.player)")
-            print("\(picker1Options[row])")
+        print("\(picker1Options[row])")
     }
     
     override func didReceiveMemoryWarning() {

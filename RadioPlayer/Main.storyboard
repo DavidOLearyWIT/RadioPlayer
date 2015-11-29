@@ -22,16 +22,16 @@
                                 <rect key="frame" x="228" y="116" width="145" height="41"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="145" id="EgW-z8-eIA"/>
-                                    <constraint firstAttribute="height" constant="41" id="lfn-xB-xAG"/>
+                                    <constraint firstAttribute="width" constant="145" id="N7w-og-3yD"/>
+                                    <constraint firstAttribute="height" constant="41" id="gcT-Ua-03J"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GHF-3R-ViR">
                                 <rect key="frame" x="194" y="428" width="213" height="152"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="152" id="1kG-6K-df4"/>
-                                    <constraint firstAttribute="width" constant="213" id="PQa-09-kox"/>
+                                    <constraint firstAttribute="height" constant="152" id="J90-VS-047"/>
+                                    <constraint firstAttribute="width" constant="213" id="wH4-03-joI"/>
                                 </constraints>
                                 <state key="normal" image="play.png">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -47,20 +47,20 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="126" id="5yN-yL-UP9"/>
+                                    <constraint firstAttribute="height" constant="126" id="uFe-Jt-3Gc"/>
                                 </constraints>
                             </pickerView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="qKx-MN-Kek" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="96" id="7wq-RW-MsF"/>
-                            <constraint firstAttribute="bottom" secondItem="GHF-3R-ViR" secondAttribute="bottom" constant="20" symbolic="YES" id="9l8-wW-X1s"/>
-                            <constraint firstItem="KNJ-9k-Vfv" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-2" id="Kbb-Eb-EfZ"/>
-                            <constraint firstItem="GHF-3R-ViR" firstAttribute="centerX" secondItem="KNJ-9k-Vfv" secondAttribute="centerX" id="cgq-xm-deV"/>
-                            <constraint firstItem="GHF-3R-ViR" firstAttribute="top" secondItem="KNJ-9k-Vfv" secondAttribute="bottom" constant="8" symbolic="YES" id="rvJ-sM-Iba"/>
-                            <constraint firstItem="GHF-3R-ViR" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="u0r-wd-EH6"/>
-                            <constraint firstItem="qKx-MN-Kek" firstAttribute="centerX" secondItem="KNJ-9k-Vfv" secondAttribute="centerX" id="zLz-Rw-27e"/>
+                            <constraint firstAttribute="bottom" secondItem="GHF-3R-ViR" secondAttribute="bottom" constant="20" symbolic="YES" id="26x-gy-Ozf"/>
+                            <constraint firstItem="KNJ-9k-Vfv" firstAttribute="centerX" secondItem="qKx-MN-Kek" secondAttribute="centerX" id="CEV-B8-rJe"/>
+                            <constraint firstItem="qKx-MN-Kek" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Uoh-2t-18e"/>
+                            <constraint firstItem="GHF-3R-ViR" firstAttribute="top" secondItem="KNJ-9k-Vfv" secondAttribute="bottom" constant="8" symbolic="YES" id="Vbl-4x-MFB"/>
+                            <constraint firstItem="qKx-MN-Kek" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="96" id="rky-Kl-hFf"/>
+                            <constraint firstItem="GHF-3R-ViR" firstAttribute="centerX" secondItem="KNJ-9k-Vfv" secondAttribute="centerX" id="sQR-eC-jKt"/>
+                            <constraint firstItem="KNJ-9k-Vfv" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-2" id="wV3-lp-ATW"/>
                         </constraints>
                     </view>
                     <connections>
