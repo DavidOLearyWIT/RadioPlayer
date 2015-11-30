@@ -22,16 +22,25 @@
                                 <rect key="frame" x="228" y="116" width="145" height="41"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="145" id="N7w-og-3yD"/>
-                                    <constraint firstAttribute="height" constant="41" id="gcT-Ua-03J"/>
+                                    <constraint firstAttribute="width" constant="145" id="jsU-F5-I6e"/>
+                                    <constraint firstAttribute="height" constant="41" id="qsJ-dG-HOs"/>
                                 </constraints>
                             </imageView>
+                            <pickerView tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KNJ-9k-Vfv">
+                                <rect key="frame" x="18" y="294" width="564" height="126"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="126" id="14I-9z-4hd"/>
+                                </constraints>
+                            </pickerView>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GHF-3R-ViR">
-                                <rect key="frame" x="194" y="428" width="213" height="152"/>
+                                <rect key="frame" x="225" y="428" width="150" height="150"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="152" id="J90-VS-047"/>
-                                    <constraint firstAttribute="width" constant="213" id="wH4-03-joI"/>
+                                    <constraint firstAttribute="height" constant="150" id="Obi-n9-f6y"/>
+                                    <constraint firstAttribute="width" constant="150" id="fhp-nc-yON"/>
                                 </constraints>
                                 <size key="titleShadowOffset" width="2.2250738585072014e-308" height="1"/>
                                 <state key="normal" image="play.png">
@@ -42,26 +51,17 @@
                                     <action selector="buttonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="XH5-Im-jzA"/>
                                 </connections>
                             </button>
-                            <pickerView tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KNJ-9k-Vfv">
-                                <rect key="frame" x="18" y="294" width="564" height="126"/>
-                                <animations/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="126" id="uFe-Jt-3Gc"/>
-                                </constraints>
-                            </pickerView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="GHF-3R-ViR" secondAttribute="bottom" constant="20" symbolic="YES" id="26x-gy-Ozf"/>
-                            <constraint firstItem="KNJ-9k-Vfv" firstAttribute="centerX" secondItem="qKx-MN-Kek" secondAttribute="centerX" id="CEV-B8-rJe"/>
-                            <constraint firstItem="qKx-MN-Kek" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Uoh-2t-18e"/>
-                            <constraint firstItem="GHF-3R-ViR" firstAttribute="top" secondItem="KNJ-9k-Vfv" secondAttribute="bottom" constant="8" symbolic="YES" id="Vbl-4x-MFB"/>
-                            <constraint firstItem="qKx-MN-Kek" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="96" id="rky-Kl-hFf"/>
-                            <constraint firstItem="GHF-3R-ViR" firstAttribute="centerX" secondItem="KNJ-9k-Vfv" secondAttribute="centerX" id="sQR-eC-jKt"/>
-                            <constraint firstItem="KNJ-9k-Vfv" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-2" id="wV3-lp-ATW"/>
+                            <constraint firstItem="KNJ-9k-Vfv" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="7L3-G7-Xo7"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="GHF-3R-ViR" secondAttribute="bottom" constant="22" id="DIP-DW-q9N"/>
+                            <constraint firstItem="qKx-MN-Kek" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="96" id="DVF-WH-2CI"/>
+                            <constraint firstItem="KNJ-9k-Vfv" firstAttribute="centerX" secondItem="qKx-MN-Kek" secondAttribute="centerX" id="JOP-ZZ-oZ3"/>
+                            <constraint firstItem="KNJ-9k-Vfv" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-2" id="a7h-Be-UhW"/>
+                            <constraint firstItem="GHF-3R-ViR" firstAttribute="centerX" secondItem="KNJ-9k-Vfv" secondAttribute="centerX" id="aUc-1l-IIk"/>
+                            <constraint firstItem="GHF-3R-ViR" firstAttribute="top" secondItem="KNJ-9k-Vfv" secondAttribute="bottom" constant="8" symbolic="YES" id="d6j-OL-QaR"/>
                         </constraints>
                     </view>
                     <connections>
@@ -76,6 +76,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="play.png" width="1920" height="1920"/>
+        <image name="play.png" width="313" height="313"/>
     </resources>
 </document>

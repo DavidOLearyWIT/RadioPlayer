@@ -18,8 +18,6 @@
 		111FBEC81C028A74008DF499 /* Radio.png in Resources */ = {isa = PBXBuildFile; fileRef = 111FBEC71C028A74008DF499 /* Radio.png */; };
 		111FBECA1C028EC4008DF499 /* frequency.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 111FBEC91C028EC4008DF499 /* frequency.jpg */; };
 		11BC0A421C03544A0099B907 /* Spectrum.gif in Resources */ = {isa = PBXBuildFile; fileRef = 11BC0A411C03544A0099B907 /* Spectrum.gif */; };
-		11CECF5A1C0C891F000E231C /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 11CECF581C0C891F000E231C /* play.png */; };
-		11CECF5B1C0C891F000E231C /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 11CECF591C0C891F000E231C /* pause.png */; };
 		11CECF6A1C0C8E8C000E231C /* chillone.png in Resources */ = {isa = PBXBuildFile; fileRef = 11CECF6C1C0C8E8C000E231C /* chillone.png */; };
 		11CECF6D1C0C8E95000E231C /* 100Chill.png in Resources */ = {isa = PBXBuildFile; fileRef = 11CECF6F1C0C8E95000E231C /* 100Chill.png */; };
 		11CECF701C0C8EA4000E231C /* absolute.png in Resources */ = {isa = PBXBuildFile; fileRef = 11CECF721C0C8EA4000E231C /* absolute.png */; };
@@ -27,6 +25,8 @@
 		11CECF761C0C8EAF000E231C /* Chocolat.png in Resources */ = {isa = PBXBuildFile; fileRef = 11CECF781C0C8EAF000E231C /* Chocolat.png */; };
 		11CECF791C0C8EB2000E231C /* classics.png in Resources */ = {isa = PBXBuildFile; fileRef = 11CECF7B1C0C8EB2000E231C /* classics.png */; };
 		11CECF7C1C0C8EB6000E231C /* vibe.png in Resources */ = {isa = PBXBuildFile; fileRef = 11CECF7E1C0C8EB6000E231C /* vibe.png */; };
+		11CECF9E1C0CAB00000E231C /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 11CECF9C1C0CAB00000E231C /* pause.png */; };
+		11CECF9F1C0CAB00000E231C /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 11CECF9D1C0CAB00000E231C /* play.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,8 +43,6 @@
 		111FBEC71C028A74008DF499 /* Radio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Radio.png; sourceTree = "<group>"; };
 		111FBEC91C028EC4008DF499 /* frequency.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = frequency.jpg; sourceTree = "<group>"; };
 		11BC0A411C03544A0099B907 /* Spectrum.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Spectrum.gif; sourceTree = "<group>"; };
-		11CECF581C0C891F000E231C /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
-		11CECF591C0C891F000E231C /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
 		11CECF6B1C0C8E8C000E231C /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = Base.lproj/chillone.png; sourceTree = "<group>"; };
 		11CECF6E1C0C8E95000E231C /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = Base.lproj/100Chill.png; sourceTree = "<group>"; };
 		11CECF711C0C8EA4000E231C /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = Base.lproj/absolute.png; sourceTree = "<group>"; };
@@ -52,6 +50,8 @@
 		11CECF771C0C8EAF000E231C /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = Base.lproj/Chocolat.png; sourceTree = "<group>"; };
 		11CECF7A1C0C8EB2000E231C /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = Base.lproj/classics.png; sourceTree = "<group>"; };
 		11CECF7D1C0C8EB6000E231C /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = Base.lproj/vibe.png; sourceTree = "<group>"; };
+		11CECF9C1C0CAB00000E231C /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
+		11CECF9D1C0CAB00000E231C /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +86,8 @@
 			children = (
 				11072C871C0BAA0100B2111F /* stations.plist */,
 				111FBEA91C02548B008DF499 /* Info.plist */,
+				11CECF9C1C0CAB00000E231C /* pause.png */,
+				11CECF9D1C0CAB00000E231C /* play.png */,
 				11CECF6F1C0C8E95000E231C /* 100Chill.png */,
 				11CECF721C0C8EA4000E231C /* absolute.png */,
 				11CECF751C0C8EA8000E231C /* buddhabar.png */,
@@ -93,8 +95,6 @@
 				11CECF781C0C8EAF000E231C /* Chocolat.png */,
 				11CECF7B1C0C8EB2000E231C /* classics.png */,
 				11CECF7E1C0C8EB6000E231C /* vibe.png */,
-				11CECF581C0C891F000E231C /* play.png */,
-				11CECF591C0C891F000E231C /* pause.png */,
 				11BC0A411C03544A0099B907 /* Spectrum.gif */,
 				111FBEC71C028A74008DF499 /* Radio.png */,
 				111FBEC91C028EC4008DF499 /* frequency.jpg */,
@@ -169,19 +169,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				11CECF6D1C0C8E95000E231C /* 100Chill.png in Resources */,
+				11CECF9F1C0CAB00000E231C /* play.png in Resources */,
 				11CECF7C1C0C8EB6000E231C /* vibe.png in Resources */,
+				11CECF9E1C0CAB00000E231C /* pause.png in Resources */,
 				11CECF731C0C8EA8000E231C /* buddhabar.png in Resources */,
 				11CECF761C0C8EAF000E231C /* Chocolat.png in Resources */,
 				11CECF701C0C8EA4000E231C /* absolute.png in Resources */,
 				11CECF6A1C0C8E8C000E231C /* chillone.png in Resources */,
-				11CECF5A1C0C891F000E231C /* play.png in Resources */,
 				111FBEC81C028A74008DF499 /* Radio.png in Resources */,
 				111FBEB61C02571A008DF499 /* Main.storyboard in Resources */,
 				11CECF791C0C8EB2000E231C /* classics.png in Resources */,
 				111FBEA81C02548B008DF499 /* LaunchScreen.storyboard in Resources */,
 				111FBECA1C028EC4008DF499 /* frequency.jpg in Resources */,
 				111FBEA51C02548B008DF499 /* Assets.xcassets in Resources */,
-				11CECF5B1C0C891F000E231C /* pause.png in Resources */,
 				11072C881C0BAA0100B2111F /* stations.plist in Resources */,
 				11BC0A421C03544A0099B907 /* Spectrum.gif in Resources */,
 			);
