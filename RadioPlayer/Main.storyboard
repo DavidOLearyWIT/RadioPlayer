@@ -26,16 +26,17 @@
                                     <constraint firstAttribute="height" constant="41" id="gcT-Ua-03J"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GHF-3R-ViR">
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GHF-3R-ViR">
                                 <rect key="frame" x="194" y="428" width="213" height="152"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="152" id="J90-VS-047"/>
                                     <constraint firstAttribute="width" constant="213" id="wH4-03-joI"/>
                                 </constraints>
+                                <size key="titleShadowOffset" width="2.2250738585072014e-308" height="1"/>
                                 <state key="normal" image="play.png">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="buttonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="XH5-Im-jzA"/>
