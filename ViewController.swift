@@ -112,7 +112,7 @@ class ViewController: UIViewController, UITextViewDelegate, UIPickerViewDelegate
                 RadioPlayer.sharedInstance.player = AVPlayer(URL: NSURL(string: "http://listen.radionomy.com/chocolat-radio")!)
                 bgImage!.image = UIImage(named: "Chocolat.png")!
             }
-            if("\(picker1Options[row])" == "Chillout Classics")
+            if("\(picker1Options[row])" == "Chill Classics")
             {
                 RadioPlayer.sharedInstance.player = AVPlayer(URL: NSURL(string: "http://listen.radionomy.com/chillout-classics")!)
                 bgImage!.image = UIImage(named: "classics.png")!
@@ -122,7 +122,7 @@ class ViewController: UIViewController, UITextViewDelegate, UIPickerViewDelegate
                 RadioPlayer.sharedInstance.player = AVPlayer(URL: NSURL(string: "http://listen.radionomy.com/absolutechillout")!)
                 bgImage!.image = UIImage(named: "absolute.png")!
             }
-            if("\(picker1Options[row])" == "Chill-One")
+            if("\(picker1Options[row])" == "Chill One")
             {
                 RadioPlayer.sharedInstance.player = AVPlayer(URL: NSURL(string: "http://listen.radionomy.com/chill-one")!)
                 bgImage!.image = UIImage(named: "chillone.png")!
