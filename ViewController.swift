@@ -94,7 +94,7 @@ class ViewController: UIViewController, UITextViewDelegate, UIPickerViewDelegate
     }
     
     func pickerView(pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
-        let attributedString = NSAttributedString(string: "\(picker1Options[row])", attributes: [NSForegroundColorAttributeName : UIColor.whiteColor()])
+        let attributedString = NSAttributedString(string: "\(picker1Options[row])", attributes: [NSForegroundColorAttributeName : UIColor.blackColor()])
         return attributedString
     }
     
