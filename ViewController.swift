@@ -9,22 +9,26 @@
 import UIKit
 import AVFoundation
 import MediaPlayer
+import EZAudioiOS
 
 
-class ViewController: UIViewController, UITextViewDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
+class ViewController: UIViewController, UITextViewDelegate, UIPickerViewDelegate, UIPickerViewDataSource, EZMicrophoneDelegate {
     
     @IBOutlet weak var trackPicker: UIPickerView!
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var bgImage: UIImageView!
+    @IBOutlet weak var audioplot: EZAudioPlot!
 
-    
     var isPlaying = false
     var error = "Error"
     var picker1Options = [String]()
+    var microphone: EZMicrophone!;
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
+
+        microphone = EZMicrophone(delegate: self, startsImmediately: true);
         
         CozyLoadingActivity.show("Press play to stream...", sender: self, disableUI: false)
         
@@ -42,7 +46,37 @@ class ViewController: UIViewController, UITextViewDelegate, UIPickerViewDelegate
         bgImage!.image = UIImage(named: "vibe.png")!
         self.trackPicker.delegate = self
         self.trackPicker.dataSource = self
+        
+        let audioPlot: EZAudioPlot = EZAudioPlot(frame: self.view.frame)
+        //self.view.addSubview(audioPlot)
+        audioPlot.backgroundColor = UIColor.whiteColor()
+        audioPlot.color = UIColor.redColor()
+        audioPlot.plotType = EZPlotType.Buffer
+        audioPlot.shouldFill = true
+        audioPlot.shouldMirror = true
 
+    }
+    
+    @IBAction func changedPlotType(sender: UISegmentedControl) {
+        let plotType: EZPlotType = EZPlotType(rawValue: sender.selectedSegmentIndex)!;
+        audioplot?.plotType = plotType;
+        switch plotType {
+        case EZPlotType.Buffer:
+            audioplot?.shouldFill = true;
+            audioplot?.shouldMirror = true;
+            break;
+        case EZPlotType.Rolling:
+            audioplot?.shouldFill = true;
+            audioplot?.shouldMirror = true;
+            break;
+        }
+    }
+
+    
+    func microphone(microphone: EZMicrophone!, hasAudioReceived buffer: UnsafeMutablePointer<UnsafeMutablePointer<Float>>, withBufferSize bufferSize: UInt32, withNumberOfChannels numberOfChannels: UInt32) {
+        dispatch_async(dispatch_get_main_queue(), { () -> Void in
+            self.audioplot?.updateBuffer(buffer[0], withBufferSize: bufferSize);
+        });
     }
     
     @IBAction func buttonPressed(sender: AnyObject) {
