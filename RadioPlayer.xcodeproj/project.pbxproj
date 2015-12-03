@@ -18,6 +18,7 @@
 		111FBEC81C028A74008DF499 /* Radio.png in Resources */ = {isa = PBXBuildFile; fileRef = 111FBEC71C028A74008DF499 /* Radio.png */; };
 		111FBECA1C028EC4008DF499 /* frequency.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 111FBEC91C028EC4008DF499 /* frequency.jpg */; };
 		1129378A1C0F3CA400442C2E /* EZAudioiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 112937871C0F3C6600442C2E /* EZAudioiOS.framework */; };
+		112AEB921C108C600049C8C6 /* viberadio.png in Resources */ = {isa = PBXBuildFile; fileRef = 112AEB911C108C600049C8C6 /* viberadio.png */; };
 		1148F0281C0D9DD4001FD68D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1148F0231C0D9DD4001FD68D /* AppDelegate.m */; };
 		1148F0291C0D9DD4001FD68D /* EZAudioPassThroughExample-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1148F0241C0D9DD4001FD68D /* EZAudioPassThroughExample-Info.plist */; };
 		1148F02A1C0D9DD4001FD68D /* PassThroughViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1148F0271C0D9DD4001FD68D /* PassThroughViewController.m */; };
@@ -30,7 +31,6 @@
 		11CECF731C0C8EA8000E231C /* buddhabar.png in Resources */ = {isa = PBXBuildFile; fileRef = 11CECF751C0C8EA8000E231C /* buddhabar.png */; };
 		11CECF761C0C8EAF000E231C /* Chocolat.png in Resources */ = {isa = PBXBuildFile; fileRef = 11CECF781C0C8EAF000E231C /* Chocolat.png */; };
 		11CECF791C0C8EB2000E231C /* classics.png in Resources */ = {isa = PBXBuildFile; fileRef = 11CECF7B1C0C8EB2000E231C /* classics.png */; };
-		11CECF7C1C0C8EB6000E231C /* vibe.png in Resources */ = {isa = PBXBuildFile; fileRef = 11CECF7E1C0C8EB6000E231C /* vibe.png */; };
 		11CECF9E1C0CAB00000E231C /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 11CECF9C1C0CAB00000E231C /* pause.png */; };
 		11CECF9F1C0CAB00000E231C /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 11CECF9D1C0CAB00000E231C /* play.png */; };
 /* End PBXBuildFile section */
@@ -66,6 +66,7 @@
 		111FBEC71C028A74008DF499 /* Radio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Radio.png; sourceTree = "<group>"; };
 		111FBEC91C028EC4008DF499 /* frequency.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = frequency.jpg; sourceTree = "<group>"; };
 		112937811C0F3C6500442C2E /* EZAudio.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EZAudio.xcodeproj; path = ../../../../../../Downloads/EZAudiomaster/EZAudio.xcodeproj; sourceTree = "<group>"; };
+		112AEB911C108C600049C8C6 /* viberadio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = viberadio.png; sourceTree = "<group>"; };
 		1148F0211C0D9DD3001FD68D /* RadioPlayer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RadioPlayer-Bridging-Header.h"; sourceTree = "<group>"; };
 		1148F0221C0D9DD4001FD68D /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1148F0231C0D9DD4001FD68D /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -98,7 +99,6 @@
 		11CECF741C0C8EA8000E231C /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = Base.lproj/buddhabar.png; sourceTree = "<group>"; };
 		11CECF771C0C8EAF000E231C /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = Base.lproj/Chocolat.png; sourceTree = "<group>"; };
 		11CECF7A1C0C8EB2000E231C /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = Base.lproj/classics.png; sourceTree = "<group>"; };
-		11CECF7D1C0C8EB6000E231C /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = Base.lproj/vibe.png; sourceTree = "<group>"; };
 		11CECF9C1C0CAB00000E231C /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
 		11CECF9D1C0CAB00000E231C /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -166,10 +166,10 @@
 				11CECF6F1C0C8E95000E231C /* 100Chill.png */,
 				11CECF721C0C8EA4000E231C /* absolute.png */,
 				11CECF751C0C8EA8000E231C /* buddhabar.png */,
+				112AEB911C108C600049C8C6 /* viberadio.png */,
 				11CECF6C1C0C8E8C000E231C /* chillone.png */,
 				11CECF781C0C8EAF000E231C /* Chocolat.png */,
 				11CECF7B1C0C8EB2000E231C /* classics.png */,
-				11CECF7E1C0C8EB6000E231C /* vibe.png */,
 				11BC0A411C03544A0099B907 /* Spectrum.gif */,
 				111FBEC71C028A74008DF499 /* Radio.png */,
 				111FBEC91C028EC4008DF499 /* frequency.jpg */,
@@ -278,7 +278,6 @@
 			files = (
 				11CECF6D1C0C8E95000E231C /* 100Chill.png in Resources */,
 				11CECF9F1C0CAB00000E231C /* play.png in Resources */,
-				11CECF7C1C0C8EB6000E231C /* vibe.png in Resources */,
 				11CECF9E1C0CAB00000E231C /* pause.png in Resources */,
 				11CECF731C0C8EA8000E231C /* buddhabar.png in Resources */,
 				11CECF761C0C8EAF000E231C /* Chocolat.png in Resources */,
@@ -293,6 +292,7 @@
 				111FBEA51C02548B008DF499 /* Assets.xcassets in Resources */,
 				11072C881C0BAA0100B2111F /* stations.plist in Resources */,
 				11BC0A421C03544A0099B907 /* Spectrum.gif in Resources */,
+				112AEB921C108C600049C8C6 /* viberadio.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,14 +371,6 @@
 				11CECF7A1C0C8EB2000E231C /* Base */,
 			);
 			name = classics.png;
-			sourceTree = "<group>";
-		};
-		11CECF7E1C0C8EB6000E231C /* vibe.png */ = {
-			isa = PBXVariantGroup;
-			children = (
-				11CECF7D1C0C8EB6000E231C /* Base */,
-			);
-			name = vibe.png;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

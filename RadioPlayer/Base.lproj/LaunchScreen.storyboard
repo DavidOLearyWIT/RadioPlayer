@@ -19,27 +19,31 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rkB-DI-BF4">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="viberadio.png" translatesAutoresizingMaskIntoConstraints="NO" id="jzD-X6-iY9">
+                                        <rect key="frame" x="145" y="232" width="311" height="135"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="311" id="V5B-BY-z0Y"/>
+                                            <constraint firstAttribute="height" constant="135" id="sDz-UB-wre"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chillradio.png" translatesAutoresizingMaskIntoConstraints="NO" id="jzD-X6-iY9">
-                                <rect key="frame" x="227" y="287" width="145" height="80"/>
-                                <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="145" id="87p-rN-Kdm"/>
+                                    <constraint firstItem="jzD-X6-iY9" firstAttribute="centerX" secondItem="rkB-DI-BF4" secondAttribute="centerX" id="GeU-Rs-pAD"/>
+                                    <constraint firstItem="jzD-X6-iY9" firstAttribute="centerY" secondItem="rkB-DI-BF4" secondAttribute="centerY" id="i6F-0C-qKB"/>
                                 </constraints>
-                            </imageView>
+                            </view>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="jzD-X6-iY9" firstAttribute="centerX" secondItem="rkB-DI-BF4" secondAttribute="centerX" id="ETN-Xr-WVd"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="jzD-X6-iY9" secondAttribute="bottom" constant="233" id="Hsr-s2-Hbw"/>
-                            <constraint firstItem="rkB-DI-BF4" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="J6h-Ie-Nmf"/>
-                            <constraint firstItem="jzD-X6-iY9" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="267" id="Ml4-yH-hZG"/>
-                            <constraint firstItem="rkB-DI-BF4" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="aW6-bg-Vec"/>
-                            <constraint firstItem="rkB-DI-BF4" firstAttribute="bottom" secondItem="xb3-aO-Qok" secondAttribute="top" id="dKm-co-lhn"/>
-                            <constraint firstAttribute="trailing" secondItem="rkB-DI-BF4" secondAttribute="trailing" id="fEj-3A-GoT"/>
+                            <constraint firstItem="rkB-DI-BF4" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Btz-He-GJE"/>
+                            <constraint firstItem="rkB-DI-BF4" firstAttribute="bottom" secondItem="xb3-aO-Qok" secondAttribute="top" id="Cmy-R6-t7o"/>
+                            <constraint firstItem="rkB-DI-BF4" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="JIh-dN-DZd"/>
+                            <constraint firstAttribute="trailing" secondItem="rkB-DI-BF4" secondAttribute="trailing" id="zb9-Nk-Ixc"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -49,6 +53,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="chillradio.png" width="613" height="90"/>
+        <image name="viberadio.png" width="1182" height="279"/>
     </resources>
 </document>

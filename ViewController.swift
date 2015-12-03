@@ -43,7 +43,7 @@ class ViewController: UIViewController, UITextViewDelegate, UIPickerViewDelegate
         
         picker1Options = dict!.objectForKey("stations") as! [String]
         
-        bgImage!.image = UIImage(named: "vibe.png")!
+        bgImage!.image = UIImage(named: "viberadio.png")!
         self.trackPicker.delegate = self
         self.trackPicker.dataSource = self
         
