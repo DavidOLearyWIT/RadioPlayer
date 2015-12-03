@@ -17,6 +17,7 @@
 		111FBEB61C02571A008DF499 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 111FBEB51C02571A008DF499 /* Main.storyboard */; };
 		111FBEC81C028A74008DF499 /* Radio.png in Resources */ = {isa = PBXBuildFile; fileRef = 111FBEC71C028A74008DF499 /* Radio.png */; };
 		111FBECA1C028EC4008DF499 /* frequency.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 111FBEC91C028EC4008DF499 /* frequency.jpg */; };
+		1129378A1C0F3CA400442C2E /* EZAudioiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 112937871C0F3C6600442C2E /* EZAudioiOS.framework */; };
 		1148F0281C0D9DD4001FD68D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1148F0231C0D9DD4001FD68D /* AppDelegate.m */; };
 		1148F0291C0D9DD4001FD68D /* EZAudioPassThroughExample-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1148F0241C0D9DD4001FD68D /* EZAudioPassThroughExample-Info.plist */; };
 		1148F02A1C0D9DD4001FD68D /* PassThroughViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1148F0271C0D9DD4001FD68D /* PassThroughViewController.m */; };
@@ -34,6 +35,23 @@
 		11CECF9F1C0CAB00000E231C /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 11CECF9D1C0CAB00000E231C /* play.png */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		112937861C0F3C6600442C2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 112937811C0F3C6500442C2E /* EZAudio.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 469F4CF31B749F7800666A46;
+			remoteInfo = EZAudioiOS;
+		};
+		112937881C0F3C6600442C2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 112937811C0F3C6500442C2E /* EZAudio.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8A5A4B9C1BBBDCB200A8A048;
+			remoteInfo = EZAudioOSX;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		11072C871C0BAA0100B2111F /* stations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = stations.plist; sourceTree = "<group>"; };
 		11072C8D1C0BBF1F00B2111F /* CosyLoadingActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CosyLoadingActivity.swift; sourceTree = "<group>"; };
@@ -47,6 +65,7 @@
 		111FBEB51C02571A008DF499 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		111FBEC71C028A74008DF499 /* Radio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Radio.png; sourceTree = "<group>"; };
 		111FBEC91C028EC4008DF499 /* frequency.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = frequency.jpg; sourceTree = "<group>"; };
+		112937811C0F3C6500442C2E /* EZAudio.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EZAudio.xcodeproj; path = ../../../../../../Downloads/EZAudiomaster/EZAudio.xcodeproj; sourceTree = "<group>"; };
 		1148F0211C0D9DD3001FD68D /* RadioPlayer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RadioPlayer-Bridging-Header.h"; sourceTree = "<group>"; };
 		1148F0221C0D9DD4001FD68D /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1148F0231C0D9DD4001FD68D /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -89,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1129378A1C0F3CA400442C2E /* EZAudioiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +118,7 @@
 		111FBE911C02548B008DF499 = {
 			isa = PBXGroup;
 			children = (
+				112937811C0F3C6500442C2E /* EZAudio.xcodeproj */,
 				111FBE9C1C02548B008DF499 /* RadioPlayer */,
 				111FBE9B1C02548B008DF499 /* Products */,
 			);
@@ -164,6 +185,15 @@
 			path = RadioPlayer;
 			sourceTree = "<group>";
 		};
+		112937821C0F3C6500442C2E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				112937871C0F3C6600442C2E /* EZAudioiOS.framework */,
+				112937891C0F3C6600442C2E /* EZAudioOSX.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -211,12 +241,35 @@
 			mainGroup = 111FBE911C02548B008DF499;
 			productRefGroup = 111FBE9B1C02548B008DF499 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 112937821C0F3C6500442C2E /* Products */;
+					ProjectRef = 112937811C0F3C6500442C2E /* EZAudio.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				111FBE991C02548B008DF499 /* RadioPlayer */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		112937871C0F3C6600442C2E /* EZAudioiOS.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = EZAudioiOS.framework;
+			remoteRef = 112937861C0F3C6600442C2E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		112937891C0F3C6600442C2E /* EZAudioOSX.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = EZAudioOSX.framework;
+			remoteRef = 112937881C0F3C6600442C2E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		111FBE981C02548B008DF499 /* Resources */ = {
