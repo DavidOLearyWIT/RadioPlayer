@@ -28,8 +28,6 @@ class ViewController: UIViewController, UITextViewDelegate, UIPickerViewDelegate
         
         super.viewDidLoad()
 
-        microphone = EZMicrophone(delegate: self, startsImmediately: true);
-        
         do{
         try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
         }catch{
@@ -44,36 +42,6 @@ class ViewController: UIViewController, UITextViewDelegate, UIPickerViewDelegate
         bgImage!.image = UIImage(named: "newviberadio.png")!
         self.trackPicker.delegate = self
         self.trackPicker.dataSource = self
-        
-        let audioPlot: EZAudioPlot = EZAudioPlot(frame: self.view.frame)
-        audioPlot.backgroundColor = UIColor.whiteColor()
-        audioPlot.color = UIColor.redColor()
-        audioPlot.plotType = EZPlotType.Buffer
-        audioPlot.shouldFill = true
-        audioPlot.shouldMirror = true
-
-    }
-    
-    @IBAction func changedPlotType(sender: UISegmentedControl) {
-        let plotType: EZPlotType = EZPlotType(rawValue: sender.selectedSegmentIndex)!;
-        audioplot?.plotType = plotType;
-        switch plotType {
-        case EZPlotType.Buffer:
-            audioplot?.shouldFill = true;
-            audioplot?.shouldMirror = true;
-            break;
-        case EZPlotType.Rolling:
-            audioplot?.shouldFill = true;
-            audioplot?.shouldMirror = true;
-            break;
-        }
-    }
-
-    
-    func microphone(microphone: EZMicrophone!, hasAudioReceived buffer: UnsafeMutablePointer<UnsafeMutablePointer<Float>>, withBufferSize bufferSize: UInt32, withNumberOfChannels numberOfChannels: UInt32) {
-        dispatch_async(dispatch_get_main_queue(), { () -> Void in
-            self.audioplot?.updateBuffer(buffer[0], withBufferSize: bufferSize);
-        });
     }
     
     @IBAction func buttonPressed(sender: AnyObject) {
@@ -162,7 +130,7 @@ class ViewController: UIViewController, UITextViewDelegate, UIPickerViewDelegate
             }
             if("\(picker1Options[row])" == "Vibe")
             {
-                RadioPlayer.sharedInstance.player = AVPlayer(URL: NSURL(string: "http://myradiostream.com/witvibe")!)
+                RadioPlayer.sharedInstance.player = AVPlayer(URL: NSURL(string: "http://s22.myradiostream.com:9368/")!)
                 bgImage!.image = UIImage(named: "newviberadio.png")!
             }
         print("\(picker1Options[row])")
