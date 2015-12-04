@@ -123,11 +123,6 @@ class ViewController: UIViewController, UITextViewDelegate, UIPickerViewDelegate
                 RadioPlayer.sharedInstance.player = AVPlayer(URL: NSURL(string: "http://listen.radionomy.com/chill-one")!)
                 bgImage!.image = UIImage(named: "newchillone.png")!
             }
-            if("\(picker1Options[row])" == "100Chill")
-            {
-                RadioPlayer.sharedInstance.player = AVPlayer(URL: NSURL(string: "http://listen.radionomy.com/100-chill")!)
-                bgImage!.image = UIImage(named: "new100Chill.png")!
-            }
             if("\(picker1Options[row])" == "Vibe")
             {
                 RadioPlayer.sharedInstance.player = AVPlayer(URL: NSURL(string: "http://s22.myradiostream.com:9368/")!)
