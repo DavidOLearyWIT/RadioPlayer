@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		11072C881C0BAA0100B2111F /* stations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 11072C871C0BAA0100B2111F /* stations.plist */; };
-		11072C8E1C0BBF1F00B2111F /* CosyLoadingActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11072C8D1C0BBF1F00B2111F /* CosyLoadingActivity.swift */; };
 		111FBE9E1C02548B008DF499 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111FBE9D1C02548B008DF499 /* AppDelegate.swift */; };
 		111FBEA51C02548B008DF499 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 111FBEA41C02548B008DF499 /* Assets.xcassets */; };
 		111FBEA81C02548B008DF499 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 111FBEA61C02548B008DF499 /* LaunchScreen.storyboard */; };
@@ -80,7 +79,6 @@
 
 /* Begin PBXFileReference section */
 		11072C871C0BAA0100B2111F /* stations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = stations.plist; sourceTree = "<group>"; };
-		11072C8D1C0BBF1F00B2111F /* CosyLoadingActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CosyLoadingActivity.swift; sourceTree = "<group>"; };
 		111FBE9A1C02548B008DF499 /* RadioPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RadioPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		111FBE9D1C02548B008DF499 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		111FBEA41C02548B008DF499 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -206,7 +204,6 @@
 				119D32091C11D1A4001124BB /* newchocolat.png */,
 				119D320A1C11D1A4001124BB /* newbuddhabar.png */,
 				112AEB911C108C600049C8C6 /* viberadio.png */,
-				11072C8D1C0BBF1F00B2111F /* CosyLoadingActivity.swift */,
 				111FBEB11C0255F6008DF499 /* RadioPlayer.swift */,
 				111FBEB21C0255F6008DF499 /* ViewController.swift */,
 				111FBE9D1C02548B008DF499 /* AppDelegate.swift */,
@@ -343,7 +340,6 @@
 			files = (
 				111FBEB41C0255F6008DF499 /* ViewController.swift in Sources */,
 				1148F0301C0DB658001FD68D /* EZPlot.m in Sources */,
-				11072C8E1C0BBF1F00B2111F /* CosyLoadingActivity.swift in Sources */,
 				111FBEB31C0255F6008DF499 /* RadioPlayer.swift in Sources */,
 				1148F02D1C0DB5CC001FD68D /* EZAudioPlot.m in Sources */,
 				111FBE9E1C02548B008DF499 /* AppDelegate.swift in Sources */,
