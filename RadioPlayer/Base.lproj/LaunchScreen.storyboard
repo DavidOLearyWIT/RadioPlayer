@@ -20,30 +20,51 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rkB-DI-BF4">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="viberadio.png" translatesAutoresizingMaskIntoConstraints="NO" id="jzD-X6-iY9">
+                                    <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="speaker.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="3FT-tg-CaI">
+                                        <rect key="frame" x="130" y="79" width="341" height="175"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="175" id="EDq-fA-E2p"/>
+                                            <constraint firstAttribute="width" constant="341" id="cCQ-SX-Rbg"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play.png" translatesAutoresizingMaskIntoConstraints="NO" id="e9U-ks-nT3">
+                                        <rect key="frame" x="225" y="409" width="150" height="169"/>
+                                        <animations/>
+                                        <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="xWU-hJ-xVQ"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newviberadio.png" translatesAutoresizingMaskIntoConstraints="NO" id="jzD-X6-iY9">
                                         <rect key="frame" x="145" y="232" width="311" height="135"/>
                                         <animations/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="311" id="V5B-BY-z0Y"/>
-                                            <constraint firstAttribute="height" constant="135" id="sDz-UB-wre"/>
+                                            <constraint firstAttribute="height" constant="135" id="1Hc-iB-e0e"/>
+                                            <constraint firstAttribute="width" constant="311" id="7To-xF-cm9"/>
                                         </constraints>
                                     </imageView>
                                 </subviews>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="jzD-X6-iY9" firstAttribute="centerX" secondItem="rkB-DI-BF4" secondAttribute="centerX" id="GeU-Rs-pAD"/>
-                                    <constraint firstItem="jzD-X6-iY9" firstAttribute="centerY" secondItem="rkB-DI-BF4" secondAttribute="centerY" id="i6F-0C-qKB"/>
+                                    <constraint firstItem="jzD-X6-iY9" firstAttribute="centerY" secondItem="rkB-DI-BF4" secondAttribute="centerY" id="3bw-8S-fXo"/>
+                                    <constraint firstItem="e9U-ks-nT3" firstAttribute="centerX" secondItem="jzD-X6-iY9" secondAttribute="centerX" id="7BA-Z0-Tet"/>
+                                    <constraint firstAttribute="bottom" secondItem="e9U-ks-nT3" secondAttribute="bottom" constant="22" id="IM5-eu-xVq"/>
+                                    <constraint firstItem="e9U-ks-nT3" firstAttribute="centerX" secondItem="rkB-DI-BF4" secondAttribute="centerX" id="SZ6-7L-hcI"/>
+                                    <constraint firstItem="e9U-ks-nT3" firstAttribute="top" secondItem="jzD-X6-iY9" secondAttribute="bottom" constant="42" id="VU6-Ld-WnL"/>
+                                    <constraint firstItem="3FT-tg-CaI" firstAttribute="top" secondItem="rkB-DI-BF4" secondAttribute="top" constant="79" id="qdi-kL-04b"/>
+                                    <constraint firstItem="jzD-X6-iY9" firstAttribute="centerX" secondItem="3FT-tg-CaI" secondAttribute="centerX" id="xdU-8A-n8Y"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="rkB-DI-BF4" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Btz-He-GJE"/>
-                            <constraint firstItem="rkB-DI-BF4" firstAttribute="bottom" secondItem="xb3-aO-Qok" secondAttribute="top" id="Cmy-R6-t7o"/>
-                            <constraint firstItem="rkB-DI-BF4" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="JIh-dN-DZd"/>
-                            <constraint firstAttribute="trailing" secondItem="rkB-DI-BF4" secondAttribute="trailing" id="zb9-Nk-Ixc"/>
+                            <constraint firstItem="rkB-DI-BF4" firstAttribute="bottom" secondItem="xb3-aO-Qok" secondAttribute="top" id="H2L-iz-jei"/>
+                            <constraint firstItem="rkB-DI-BF4" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="qFa-b2-4KT"/>
+                            <constraint firstItem="rkB-DI-BF4" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="tIe-Y0-mmy"/>
+                            <constraint firstAttribute="trailing" secondItem="rkB-DI-BF4" secondAttribute="trailing" id="zuw-aP-mTd"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -53,6 +74,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="viberadio.png" width="1182" height="279"/>
+        <image name="newviberadio.png" width="656" height="172"/>
+        <image name="play.png" width="313" height="313"/>
+        <image name="speaker.jpg" width="347" height="302"/>
     </resources>
 </document>

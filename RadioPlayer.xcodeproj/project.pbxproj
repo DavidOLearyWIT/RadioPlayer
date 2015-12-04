@@ -24,13 +24,18 @@
 		1148F02A1C0D9DD4001FD68D /* PassThroughViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1148F0271C0D9DD4001FD68D /* PassThroughViewController.m */; };
 		1148F02D1C0DB5CC001FD68D /* EZAudioPlot.m in Sources */ = {isa = PBXBuildFile; fileRef = 1148F02C1C0DB5CC001FD68D /* EZAudioPlot.m */; };
 		1148F0301C0DB658001FD68D /* EZPlot.m in Sources */ = {isa = PBXBuildFile; fileRef = 1148F02F1C0DB658001FD68D /* EZPlot.m */; };
+		119D32001C11CB5A001124BB /* speaker.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 119D31FF1C11CB5A001124BB /* speaker.jpg */; };
+		119D32041C11D023001124BB /* newvibe.png in Resources */ = {isa = PBXBuildFile; fileRef = 119D32031C11D022001124BB /* newvibe.png */; };
+		119D320B1C11D1A4001124BB /* new100chill.png in Resources */ = {isa = PBXBuildFile; fileRef = 119D32051C11D1A4001124BB /* new100chill.png */; };
+		119D320C1C11D1A4001124BB /* newchillone.png in Resources */ = {isa = PBXBuildFile; fileRef = 119D32061C11D1A4001124BB /* newchillone.png */; };
+		119D320D1C11D1A4001124BB /* newclassics.png in Resources */ = {isa = PBXBuildFile; fileRef = 119D32071C11D1A4001124BB /* newclassics.png */; };
+		119D320E1C11D1A4001124BB /* newabsolute.png in Resources */ = {isa = PBXBuildFile; fileRef = 119D32081C11D1A4001124BB /* newabsolute.png */; };
+		119D320F1C11D1A4001124BB /* newchocolat.png in Resources */ = {isa = PBXBuildFile; fileRef = 119D32091C11D1A4001124BB /* newchocolat.png */; };
+		119D32101C11D1A4001124BB /* newbuddhabar.png in Resources */ = {isa = PBXBuildFile; fileRef = 119D320A1C11D1A4001124BB /* newbuddhabar.png */; };
+		119D32121C11D344001124BB /* newviberadio.png in Resources */ = {isa = PBXBuildFile; fileRef = 119D32111C11D344001124BB /* newviberadio.png */; };
+		119D32131C11E037001124BB /* EZAudioiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 112937871C0F3C6600442C2E /* EZAudioiOS.framework */; };
+		119D32141C11E037001124BB /* EZAudioiOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 112937871C0F3C6600442C2E /* EZAudioiOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		11BC0A421C03544A0099B907 /* Spectrum.gif in Resources */ = {isa = PBXBuildFile; fileRef = 11BC0A411C03544A0099B907 /* Spectrum.gif */; };
-		11CECF6A1C0C8E8C000E231C /* chillone.png in Resources */ = {isa = PBXBuildFile; fileRef = 11CECF6C1C0C8E8C000E231C /* chillone.png */; };
-		11CECF6D1C0C8E95000E231C /* 100Chill.png in Resources */ = {isa = PBXBuildFile; fileRef = 11CECF6F1C0C8E95000E231C /* 100Chill.png */; };
-		11CECF701C0C8EA4000E231C /* absolute.png in Resources */ = {isa = PBXBuildFile; fileRef = 11CECF721C0C8EA4000E231C /* absolute.png */; };
-		11CECF731C0C8EA8000E231C /* buddhabar.png in Resources */ = {isa = PBXBuildFile; fileRef = 11CECF751C0C8EA8000E231C /* buddhabar.png */; };
-		11CECF761C0C8EAF000E231C /* Chocolat.png in Resources */ = {isa = PBXBuildFile; fileRef = 11CECF781C0C8EAF000E231C /* Chocolat.png */; };
-		11CECF791C0C8EB2000E231C /* classics.png in Resources */ = {isa = PBXBuildFile; fileRef = 11CECF7B1C0C8EB2000E231C /* classics.png */; };
 		11CECF9E1C0CAB00000E231C /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 11CECF9C1C0CAB00000E231C /* pause.png */; };
 		11CECF9F1C0CAB00000E231C /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 11CECF9D1C0CAB00000E231C /* play.png */; };
 /* End PBXBuildFile section */
@@ -50,7 +55,28 @@
 			remoteGlobalIDString = 8A5A4B9C1BBBDCB200A8A048;
 			remoteInfo = EZAudioOSX;
 		};
+		119D32151C11E037001124BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 112937811C0F3C6500442C2E /* EZAudio.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 469F4CF21B749F7800666A46;
+			remoteInfo = EZAudioiOS;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		119D32171C11E037001124BB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				119D32141C11E037001124BB /* EZAudioiOS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		11072C871C0BAA0100B2111F /* stations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = stations.plist; sourceTree = "<group>"; };
@@ -92,13 +118,16 @@
 		1148F03C1C0DB7FF001FD68D /* EZAudioPlotGL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZAudioPlotGL.h; sourceTree = "<group>"; };
 		1148F03D1C0DB82E001FD68D /* EZAudioFFT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZAudioFFT.h; sourceTree = "<group>"; };
 		1148F03E1C0DB83E001FD68D /* EZAudioFloatConverter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZAudioFloatConverter.h; sourceTree = "<group>"; };
+		119D31FF1C11CB5A001124BB /* speaker.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = speaker.jpg; sourceTree = "<group>"; };
+		119D32031C11D022001124BB /* newvibe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newvibe.png; sourceTree = "<group>"; };
+		119D32051C11D1A4001124BB /* new100chill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = new100chill.png; sourceTree = "<group>"; };
+		119D32061C11D1A4001124BB /* newchillone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newchillone.png; sourceTree = "<group>"; };
+		119D32071C11D1A4001124BB /* newclassics.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newclassics.png; sourceTree = "<group>"; };
+		119D32081C11D1A4001124BB /* newabsolute.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newabsolute.png; sourceTree = "<group>"; };
+		119D32091C11D1A4001124BB /* newchocolat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newchocolat.png; sourceTree = "<group>"; };
+		119D320A1C11D1A4001124BB /* newbuddhabar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newbuddhabar.png; sourceTree = "<group>"; };
+		119D32111C11D344001124BB /* newviberadio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newviberadio.png; sourceTree = "<group>"; };
 		11BC0A411C03544A0099B907 /* Spectrum.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Spectrum.gif; sourceTree = "<group>"; };
-		11CECF6B1C0C8E8C000E231C /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = Base.lproj/chillone.png; sourceTree = "<group>"; };
-		11CECF6E1C0C8E95000E231C /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = Base.lproj/100Chill.png; sourceTree = "<group>"; };
-		11CECF711C0C8EA4000E231C /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = Base.lproj/absolute.png; sourceTree = "<group>"; };
-		11CECF741C0C8EA8000E231C /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = Base.lproj/buddhabar.png; sourceTree = "<group>"; };
-		11CECF771C0C8EAF000E231C /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = Base.lproj/Chocolat.png; sourceTree = "<group>"; };
-		11CECF7A1C0C8EB2000E231C /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = Base.lproj/classics.png; sourceTree = "<group>"; };
 		11CECF9C1C0CAB00000E231C /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
 		11CECF9D1C0CAB00000E231C /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,6 +137,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				119D32131C11E037001124BB /* EZAudioiOS.framework in Frameworks */,
 				1129378A1C0F3CA400442C2E /* EZAudioiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -163,13 +193,16 @@
 				111FBEA91C02548B008DF499 /* Info.plist */,
 				11CECF9C1C0CAB00000E231C /* pause.png */,
 				11CECF9D1C0CAB00000E231C /* play.png */,
-				11CECF6F1C0C8E95000E231C /* 100Chill.png */,
-				11CECF721C0C8EA4000E231C /* absolute.png */,
-				11CECF751C0C8EA8000E231C /* buddhabar.png */,
+				119D32031C11D022001124BB /* newvibe.png */,
+				119D31FF1C11CB5A001124BB /* speaker.jpg */,
+				119D32051C11D1A4001124BB /* new100chill.png */,
+				119D32061C11D1A4001124BB /* newchillone.png */,
+				119D32071C11D1A4001124BB /* newclassics.png */,
+				119D32081C11D1A4001124BB /* newabsolute.png */,
+				119D32111C11D344001124BB /* newviberadio.png */,
+				119D32091C11D1A4001124BB /* newchocolat.png */,
+				119D320A1C11D1A4001124BB /* newbuddhabar.png */,
 				112AEB911C108C600049C8C6 /* viberadio.png */,
-				11CECF6C1C0C8E8C000E231C /* chillone.png */,
-				11CECF781C0C8EAF000E231C /* Chocolat.png */,
-				11CECF7B1C0C8EB2000E231C /* classics.png */,
 				11BC0A411C03544A0099B907 /* Spectrum.gif */,
 				111FBEC71C028A74008DF499 /* Radio.png */,
 				111FBEC91C028EC4008DF499 /* frequency.jpg */,
@@ -204,10 +237,12 @@
 				111FBE961C02548B008DF499 /* Sources */,
 				111FBE971C02548B008DF499 /* Frameworks */,
 				111FBE981C02548B008DF499 /* Resources */,
+				119D32171C11E037001124BB /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				119D32161C11E037001124BB /* PBXTargetDependency */,
 			);
 			name = RadioPlayer;
 			productName = RadioPlayer;
@@ -276,23 +311,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11CECF6D1C0C8E95000E231C /* 100Chill.png in Resources */,
 				11CECF9F1C0CAB00000E231C /* play.png in Resources */,
+				119D320D1C11D1A4001124BB /* newclassics.png in Resources */,
 				11CECF9E1C0CAB00000E231C /* pause.png in Resources */,
-				11CECF731C0C8EA8000E231C /* buddhabar.png in Resources */,
-				11CECF761C0C8EAF000E231C /* Chocolat.png in Resources */,
-				11CECF701C0C8EA4000E231C /* absolute.png in Resources */,
-				11CECF6A1C0C8E8C000E231C /* chillone.png in Resources */,
+				119D320C1C11D1A4001124BB /* newchillone.png in Resources */,
 				111FBEC81C028A74008DF499 /* Radio.png in Resources */,
+				119D320E1C11D1A4001124BB /* newabsolute.png in Resources */,
+				119D32121C11D344001124BB /* newviberadio.png in Resources */,
+				119D320B1C11D1A4001124BB /* new100chill.png in Resources */,
+				119D32041C11D023001124BB /* newvibe.png in Resources */,
 				111FBEB61C02571A008DF499 /* Main.storyboard in Resources */,
 				1148F0291C0D9DD4001FD68D /* EZAudioPassThroughExample-Info.plist in Resources */,
-				11CECF791C0C8EB2000E231C /* classics.png in Resources */,
 				111FBEA81C02548B008DF499 /* LaunchScreen.storyboard in Resources */,
 				111FBECA1C028EC4008DF499 /* frequency.jpg in Resources */,
+				119D32101C11D1A4001124BB /* newbuddhabar.png in Resources */,
+				119D32001C11CB5A001124BB /* speaker.jpg in Resources */,
 				111FBEA51C02548B008DF499 /* Assets.xcassets in Resources */,
 				11072C881C0BAA0100B2111F /* stations.plist in Resources */,
 				11BC0A421C03544A0099B907 /* Spectrum.gif in Resources */,
 				112AEB921C108C600049C8C6 /* viberadio.png in Resources */,
+				119D320F1C11D1A4001124BB /* newchocolat.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +354,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		119D32161C11E037001124BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EZAudioiOS;
+			targetProxy = 119D32151C11E037001124BB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		111FBEA61C02548B008DF499 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -323,54 +369,6 @@
 				111FBEA71C02548B008DF499 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		11CECF6C1C0C8E8C000E231C /* chillone.png */ = {
-			isa = PBXVariantGroup;
-			children = (
-				11CECF6B1C0C8E8C000E231C /* Base */,
-			);
-			name = chillone.png;
-			sourceTree = "<group>";
-		};
-		11CECF6F1C0C8E95000E231C /* 100Chill.png */ = {
-			isa = PBXVariantGroup;
-			children = (
-				11CECF6E1C0C8E95000E231C /* Base */,
-			);
-			name = 100Chill.png;
-			sourceTree = "<group>";
-		};
-		11CECF721C0C8EA4000E231C /* absolute.png */ = {
-			isa = PBXVariantGroup;
-			children = (
-				11CECF711C0C8EA4000E231C /* Base */,
-			);
-			name = absolute.png;
-			sourceTree = "<group>";
-		};
-		11CECF751C0C8EA8000E231C /* buddhabar.png */ = {
-			isa = PBXVariantGroup;
-			children = (
-				11CECF741C0C8EA8000E231C /* Base */,
-			);
-			name = buddhabar.png;
-			sourceTree = "<group>";
-		};
-		11CECF781C0C8EAF000E231C /* Chocolat.png */ = {
-			isa = PBXVariantGroup;
-			children = (
-				11CECF771C0C8EAF000E231C /* Base */,
-			);
-			name = Chocolat.png;
-			sourceTree = "<group>";
-		};
-		11CECF7B1C0C8EB2000E231C /* classics.png */ = {
-			isa = PBXVariantGroup;
-			children = (
-				11CECF7A1C0C8EB2000E231C /* Base */,
-			);
-			name = classics.png;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

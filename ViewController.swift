@@ -43,7 +43,7 @@ class ViewController: UIViewController, UITextViewDelegate, UIPickerViewDelegate
         
         picker1Options = dict!.objectForKey("stations") as! [String]
         
-        bgImage!.image = UIImage(named: "viberadio.png")!
+        bgImage!.image = UIImage(named: "newviberadio.png")!
         self.trackPicker.delegate = self
         self.trackPicker.dataSource = self
         
@@ -139,37 +139,37 @@ class ViewController: UIViewController, UITextViewDelegate, UIPickerViewDelegate
             if("\(picker1Options[row])" == "Buddha Bar")
             {
                 RadioPlayer.sharedInstance.player = AVPlayer(URL: NSURL(string: "http://listen.radionomy.com/buddha-bar")!)
-                bgImage!.image = UIImage(named: "buddhabar.png")!
+                bgImage!.image = UIImage(named: "newbuddhabar.png")!
             }
             if("\(picker1Options[row])" == "Chocolat")
             {
                 RadioPlayer.sharedInstance.player = AVPlayer(URL: NSURL(string: "http://listen.radionomy.com/chocolat-radio")!)
-                bgImage!.image = UIImage(named: "Chocolat.png")!
+                bgImage!.image = UIImage(named: "newchocolat.png")!
             }
             if("\(picker1Options[row])" == "Chill Classics")
             {
                 RadioPlayer.sharedInstance.player = AVPlayer(URL: NSURL(string: "http://listen.radionomy.com/chillout-classics")!)
-                bgImage!.image = UIImage(named: "classics.png")!
+                bgImage!.image = UIImage(named: "newclassics.png")!
             }
             if("\(picker1Options[row])" == "Absolute Chillout")
             {
                 RadioPlayer.sharedInstance.player = AVPlayer(URL: NSURL(string: "http://listen.radionomy.com/absolutechillout")!)
-                bgImage!.image = UIImage(named: "absolute.png")!
+                bgImage!.image = UIImage(named: "newabsolute.png")!
             }
             if("\(picker1Options[row])" == "Chill One")
             {
                 RadioPlayer.sharedInstance.player = AVPlayer(URL: NSURL(string: "http://listen.radionomy.com/chill-one")!)
-                bgImage!.image = UIImage(named: "chillone.png")!
+                bgImage!.image = UIImage(named: "newchillone.png")!
             }
             if("\(picker1Options[row])" == "100 Chill")
             {
                 RadioPlayer.sharedInstance.player = AVPlayer(URL: NSURL(string: "http://listen.radionomy.com/100-chill")!)
-                bgImage!.image = UIImage(named: "100Chill.png")!
+                bgImage!.image = UIImage(named: "new100Chill.png")!
             }
             if("\(picker1Options[row])" == "Vibe")
             {
                 RadioPlayer.sharedInstance.player = AVPlayer(URL: NSURL(string: "http://s22.myradiostream.com:9368/")!)
-                bgImage!.image = UIImage(named: "vibe.png")!
+                bgImage!.image = UIImage(named: "newviberadio.png")!
             }
         print("\(picker1Options[row])")
     }
