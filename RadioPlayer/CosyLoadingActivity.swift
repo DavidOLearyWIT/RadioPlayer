@@ -97,10 +97,10 @@ struct CozyLoadingActivity {
             
             let yPosition = frame.height/2 - 20
             
-            activityView = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.WhiteLarge)
-            activityView.frame = CGRect(x: 10, y: yPosition, width: 40, height: 40)
-            activityView.color = Settings.CLAActivityColor
-            activityView.startAnimating()
+            //activityView = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.WhiteLarge)
+            //activityView.frame = CGRect(x: 10, y: yPosition, width: 40, height: 40)
+            //activityView.color = Settings.CLAActivityColor
+            //activityView.startAnimating()
             
             textLabel = UILabel(frame: CGRect(x: 60, y: yPosition, width: width - 70, height: 40))
             textLabel.textColor = Settings.CLATextColor

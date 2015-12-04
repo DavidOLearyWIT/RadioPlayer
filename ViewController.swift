@@ -30,8 +30,6 @@ class ViewController: UIViewController, UITextViewDelegate, UIPickerViewDelegate
 
         microphone = EZMicrophone(delegate: self, startsImmediately: true);
         
-        CozyLoadingActivity.show("Press play to stream...", sender: self, disableUI: false)
-        
         do{
         try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
         }catch{
@@ -48,7 +46,6 @@ class ViewController: UIViewController, UITextViewDelegate, UIPickerViewDelegate
         self.trackPicker.dataSource = self
         
         let audioPlot: EZAudioPlot = EZAudioPlot(frame: self.view.frame)
-        //self.view.addSubview(audioPlot)
         audioPlot.backgroundColor = UIColor.whiteColor()
         audioPlot.color = UIColor.redColor()
         audioPlot.plotType = EZPlotType.Buffer
@@ -97,15 +94,12 @@ class ViewController: UIViewController, UITextViewDelegate, UIPickerViewDelegate
         
         RadioPlayer.sharedInstance.play()
         playButton.setImage(UIImage(named: "pause.png") , forState: UIControlState.Normal)
-        CozyLoadingActivity.hide(success: true, animated: false)
     }
     
     func pauseRadio() {
         
         RadioPlayer.sharedInstance.pause()
         playButton.setImage(UIImage(named: "play.png") , forState: UIControlState.Normal)
-        CozyLoadingActivity.show("Press play to resume...", sender: self, disableUI: false)
-
     }
     
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
@@ -161,14 +155,14 @@ class ViewController: UIViewController, UITextViewDelegate, UIPickerViewDelegate
                 RadioPlayer.sharedInstance.player = AVPlayer(URL: NSURL(string: "http://listen.radionomy.com/chill-one")!)
                 bgImage!.image = UIImage(named: "newchillone.png")!
             }
-            if("\(picker1Options[row])" == "100 Chill")
+            if("\(picker1Options[row])" == "100Chill")
             {
                 RadioPlayer.sharedInstance.player = AVPlayer(URL: NSURL(string: "http://listen.radionomy.com/100-chill")!)
                 bgImage!.image = UIImage(named: "new100Chill.png")!
             }
             if("\(picker1Options[row])" == "Vibe")
             {
-                RadioPlayer.sharedInstance.player = AVPlayer(URL: NSURL(string: "http://s22.myradiostream.com:9368/")!)
+                RadioPlayer.sharedInstance.player = AVPlayer(URL: NSURL(string: "http://myradiostream.com/witvibe")!)
                 bgImage!.image = UIImage(named: "newviberadio.png")!
             }
         print("\(picker1Options[row])")

@@ -15,8 +15,6 @@
 		111FBEB31C0255F6008DF499 /* RadioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111FBEB11C0255F6008DF499 /* RadioPlayer.swift */; };
 		111FBEB41C0255F6008DF499 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111FBEB21C0255F6008DF499 /* ViewController.swift */; };
 		111FBEB61C02571A008DF499 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 111FBEB51C02571A008DF499 /* Main.storyboard */; };
-		111FBEC81C028A74008DF499 /* Radio.png in Resources */ = {isa = PBXBuildFile; fileRef = 111FBEC71C028A74008DF499 /* Radio.png */; };
-		111FBECA1C028EC4008DF499 /* frequency.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 111FBEC91C028EC4008DF499 /* frequency.jpg */; };
 		1129378A1C0F3CA400442C2E /* EZAudioiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 112937871C0F3C6600442C2E /* EZAudioiOS.framework */; };
 		112AEB921C108C600049C8C6 /* viberadio.png in Resources */ = {isa = PBXBuildFile; fileRef = 112AEB911C108C600049C8C6 /* viberadio.png */; };
 		1148F0281C0D9DD4001FD68D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1148F0231C0D9DD4001FD68D /* AppDelegate.m */; };
@@ -35,7 +33,9 @@
 		119D32121C11D344001124BB /* newviberadio.png in Resources */ = {isa = PBXBuildFile; fileRef = 119D32111C11D344001124BB /* newviberadio.png */; };
 		119D32131C11E037001124BB /* EZAudioiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 112937871C0F3C6600442C2E /* EZAudioiOS.framework */; };
 		119D32141C11E037001124BB /* EZAudioiOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 112937871C0F3C6600442C2E /* EZAudioiOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		11BC0A421C03544A0099B907 /* Spectrum.gif in Resources */ = {isa = PBXBuildFile; fileRef = 11BC0A411C03544A0099B907 /* Spectrum.gif */; };
+		119D321F1C11E806001124BB /* radiobox.png in Resources */ = {isa = PBXBuildFile; fileRef = 119D321E1C11E806001124BB /* radiobox.png */; };
+		119D32211C11EB45001124BB /* radioboxlarge.png in Resources */ = {isa = PBXBuildFile; fileRef = 119D32201C11EB45001124BB /* radioboxlarge.png */; };
+		119D32271C11EE2B001124BB /* red.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 119D32261C11EE2B001124BB /* red.jpg */; };
 		11CECF9E1C0CAB00000E231C /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 11CECF9C1C0CAB00000E231C /* pause.png */; };
 		11CECF9F1C0CAB00000E231C /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 11CECF9D1C0CAB00000E231C /* play.png */; };
 /* End PBXBuildFile section */
@@ -67,7 +67,7 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		119D32171C11E037001124BB /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
@@ -89,8 +89,6 @@
 		111FBEB11C0255F6008DF499 /* RadioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioPlayer.swift; sourceTree = SOURCE_ROOT; };
 		111FBEB21C0255F6008DF499 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
 		111FBEB51C02571A008DF499 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		111FBEC71C028A74008DF499 /* Radio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Radio.png; sourceTree = "<group>"; };
-		111FBEC91C028EC4008DF499 /* frequency.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = frequency.jpg; sourceTree = "<group>"; };
 		112937811C0F3C6500442C2E /* EZAudio.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EZAudio.xcodeproj; path = ../../../../../../Downloads/EZAudiomaster/EZAudio.xcodeproj; sourceTree = "<group>"; };
 		112AEB911C108C600049C8C6 /* viberadio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = viberadio.png; sourceTree = "<group>"; };
 		1148F0211C0D9DD3001FD68D /* RadioPlayer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RadioPlayer-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -127,7 +125,9 @@
 		119D32091C11D1A4001124BB /* newchocolat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newchocolat.png; sourceTree = "<group>"; };
 		119D320A1C11D1A4001124BB /* newbuddhabar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newbuddhabar.png; sourceTree = "<group>"; };
 		119D32111C11D344001124BB /* newviberadio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newviberadio.png; sourceTree = "<group>"; };
-		11BC0A411C03544A0099B907 /* Spectrum.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Spectrum.gif; sourceTree = "<group>"; };
+		119D321E1C11E806001124BB /* radiobox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radiobox.png; sourceTree = "<group>"; };
+		119D32201C11EB45001124BB /* radioboxlarge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radioboxlarge.png; sourceTree = "<group>"; };
+		119D32261C11EE2B001124BB /* red.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = red.jpg; sourceTree = "<group>"; };
 		11CECF9C1C0CAB00000E231C /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
 		11CECF9D1C0CAB00000E231C /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -191,7 +191,10 @@
 				1148F0271C0D9DD4001FD68D /* PassThroughViewController.m */,
 				11072C871C0BAA0100B2111F /* stations.plist */,
 				111FBEA91C02548B008DF499 /* Info.plist */,
+				119D321E1C11E806001124BB /* radiobox.png */,
+				119D32261C11EE2B001124BB /* red.jpg */,
 				11CECF9C1C0CAB00000E231C /* pause.png */,
+				119D32201C11EB45001124BB /* radioboxlarge.png */,
 				11CECF9D1C0CAB00000E231C /* play.png */,
 				119D32031C11D022001124BB /* newvibe.png */,
 				119D31FF1C11CB5A001124BB /* speaker.jpg */,
@@ -203,9 +206,6 @@
 				119D32091C11D1A4001124BB /* newchocolat.png */,
 				119D320A1C11D1A4001124BB /* newbuddhabar.png */,
 				112AEB911C108C600049C8C6 /* viberadio.png */,
-				11BC0A411C03544A0099B907 /* Spectrum.gif */,
-				111FBEC71C028A74008DF499 /* Radio.png */,
-				111FBEC91C028EC4008DF499 /* frequency.jpg */,
 				11072C8D1C0BBF1F00B2111F /* CosyLoadingActivity.swift */,
 				111FBEB11C0255F6008DF499 /* RadioPlayer.swift */,
 				111FBEB21C0255F6008DF499 /* ViewController.swift */,
@@ -315,20 +315,20 @@
 				119D320D1C11D1A4001124BB /* newclassics.png in Resources */,
 				11CECF9E1C0CAB00000E231C /* pause.png in Resources */,
 				119D320C1C11D1A4001124BB /* newchillone.png in Resources */,
-				111FBEC81C028A74008DF499 /* Radio.png in Resources */,
 				119D320E1C11D1A4001124BB /* newabsolute.png in Resources */,
 				119D32121C11D344001124BB /* newviberadio.png in Resources */,
 				119D320B1C11D1A4001124BB /* new100chill.png in Resources */,
 				119D32041C11D023001124BB /* newvibe.png in Resources */,
 				111FBEB61C02571A008DF499 /* Main.storyboard in Resources */,
+				119D32211C11EB45001124BB /* radioboxlarge.png in Resources */,
 				1148F0291C0D9DD4001FD68D /* EZAudioPassThroughExample-Info.plist in Resources */,
 				111FBEA81C02548B008DF499 /* LaunchScreen.storyboard in Resources */,
-				111FBECA1C028EC4008DF499 /* frequency.jpg in Resources */,
 				119D32101C11D1A4001124BB /* newbuddhabar.png in Resources */,
+				119D32271C11EE2B001124BB /* red.jpg in Resources */,
+				119D321F1C11E806001124BB /* radiobox.png in Resources */,
 				119D32001C11CB5A001124BB /* speaker.jpg in Resources */,
 				111FBEA51C02548B008DF499 /* Assets.xcassets in Resources */,
 				11072C881C0BAA0100B2111F /* stations.plist in Resources */,
-				11BC0A421C03544A0099B907 /* Spectrum.gif in Resources */,
 				112AEB921C108C600049C8C6 /* viberadio.png in Resources */,
 				119D320F1C11D1A4001124BB /* newchocolat.png in Resources */,
 			);
