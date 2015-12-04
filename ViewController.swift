@@ -9,7 +9,6 @@
 import UIKit
 import AVFoundation
 import MediaPlayer
-import EZAudioiOS
 
 
 class ViewController: UIViewController, UITextViewDelegate, UIPickerViewDelegate, UIPickerViewDataSource, EZMicrophoneDelegate {
@@ -17,12 +16,10 @@ class ViewController: UIViewController, UITextViewDelegate, UIPickerViewDelegate
     @IBOutlet weak var trackPicker: UIPickerView!
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var bgImage: UIImageView!
-    @IBOutlet weak var audioplot: EZAudioPlot!
 
     var isPlaying = false
     var error = "Error"
     var picker1Options = [String]()
-    var microphone: EZMicrophone!;
     
     override func viewDidLoad() {
         
