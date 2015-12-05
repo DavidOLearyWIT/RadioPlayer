@@ -2,8 +2,9 @@
 //  RadioPlayer.swift
 //  MusicPlayer
 //
-//  Created by Shapes on 20/11/2015.
-//  Copyright © 2015 Shapes. All rights reserved.
+//  Created by David O'Leary on 20/11/2015.
+//  Based upon iOS Creator tutorial on playing audio http://www.ioscreator.com/tutorials/play-music-avaudioplayer-ios8-swift
+//  Copyright © 2015 David O'Leary. All rights reserved.
 //
 
 //Import of libraries

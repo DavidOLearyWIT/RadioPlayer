@@ -1,9 +1,9 @@
 //
 //  ViewController.swift
-//  MusicPlayer2
+//  RadioPlayer
 //
-//  Created by Shapes on 13/11/2015.
-//  Copyright © 2015 Shapes. All rights reserved.
+//  Created by David O'Leary  on 13/11/2015.
+//  Copyright © 2015 David O'Leary. All rights reserved.
 //
 
 //Imported libraries
