@@ -116,31 +116,37 @@ class ViewController: UIViewController, UITextViewDelegate, UIPickerViewDelegate
             {
                 RadioPlayer.sharedInstance.player = AVPlayer(URL: NSURL(string: "http://listen.radionomy.com/buddha-bar")!)
                 bgImage!.image = UIImage(named: "newbuddhabar.png")!
+                RadioPlayer.sharedInstance.play()
             }
             if("\(picker1Options[row])" == "Chocolat")
             {
                 RadioPlayer.sharedInstance.player = AVPlayer(URL: NSURL(string: "http://listen.radionomy.com/chocolat-radio")!)
                 bgImage!.image = UIImage(named: "newchocolat.png")!
+                RadioPlayer.sharedInstance.play()
             }
             if("\(picker1Options[row])" == "Chill Classics")
             {
                 RadioPlayer.sharedInstance.player = AVPlayer(URL: NSURL(string: "http://listen.radionomy.com/chillout-classics")!)
                 bgImage!.image = UIImage(named: "newclassics.png")!
+                RadioPlayer.sharedInstance.play()
             }
             if("\(picker1Options[row])" == "Absolute Chillout")
             {
                 RadioPlayer.sharedInstance.player = AVPlayer(URL: NSURL(string: "http://listen.radionomy.com/absolutechillout")!)
                 bgImage!.image = UIImage(named: "newabsolute.png")!
+                RadioPlayer.sharedInstance.play()
             }
             if("\(picker1Options[row])" == "Chill One")
             {
                 RadioPlayer.sharedInstance.player = AVPlayer(URL: NSURL(string: "http://listen.radionomy.com/chill-one")!)
                 bgImage!.image = UIImage(named: "newchillone.png")!
+                RadioPlayer.sharedInstance.play()
             }
             if("\(picker1Options[row])" == "Vibe")
             {
                 RadioPlayer.sharedInstance.player = AVPlayer(URL: NSURL(string: "http://s22.myradiostream.com:9368/")!)
                 bgImage!.image = UIImage(named: "newviberadio.png")!
+                RadioPlayer.sharedInstance.play()
             }
     }
     
